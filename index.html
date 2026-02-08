@@ -27,7 +27,7 @@
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
                     </button>
-                    <a href="https://www.artisanitsolutions.com" class=" hidden-sm hidden-md hidden-lg">
+                    <a href="https://www.artisanitsolutions.com" class="hidden-sm hidden-md hidden-lg">
                         <div class="logo-container">
                             <div class="brand brand--offset brand--pop">
                                 ARTISAN
@@ -53,11 +53,11 @@
                             Services
                             </a>
                         </li>                        
-                        <li>
+                        <!-- <li>
                             <a href="#Testimonials">
                             Testimonials
                             </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="#contact_us">
                             Contact Us
@@ -77,7 +77,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="h1description hidden-xs">
-                                <h1>ARTISAN</h1>
+                                <h1><span class="hero-title-transparent">ARTISAN</span></h1>
                             </div>
                         </div>
                     </div>
@@ -87,10 +87,14 @@
                 <div class="container text-center">
                     <h4 class="header-text">About Us</h4>
                     <p>
-                        Our team boasts extensive expertise in Yardi, with over a decade of experience and a successful track record of serving numerous Yardi clients. We take pride in our proficiency in Yardi's proprietary reporting tools, as well as our ability to effectively execute data migration and implement Yardi modules. As Yardi experts, we are committed to delivering top-notch solutions and exceptional customer service to our clients.
+                        With over 12 years of hands-on experience working across the Yardi product suite, we specialize in helping our clients with their property management operations. 
+                        Our expertise spans helpdesk support, custom development, and data migration, giving us a deep, end-to-end understanding of both the technical and day-to-day realities of Yardi users. 
+                        Whether it’s troubleshooting issues, building tailored solutions, or migrating critical data with accuracy and confidence, we focus on practical results that support real business needs. 
+                        We partner closely with our clients to optimize business processes, reduce friction for end users, and improve overall system efficiency. 
+                        ur approach is hands-on, responsive, and grounded in real-world experience.
                         <br>
                     </p>
-                    <div class="logos">
+                    <!-- <div class="logos">
                         <ul class="list-unstyled">
                             <li ><img src="assets/img/logos/KWE.png"/></li>
                             <li ><img src="assets/img/logos/Post.png"/></li>
@@ -98,14 +102,26 @@
                             <li ><img src="assets/img/logos/D2D.png"/></li>
                             <li ><img src="assets/img/logos/Arcis.png"/></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="section section-presentation" id="services_section">
+            <div class="section section-presentation section-gray" id="services_section">
                 <div class="container text-center">
                     <h4 class="header-text section-title-spaced">Our Expertise</h4>
                 </div>
                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 hidden-sm hidden-xs">
+                            <img class="service-image service-image-rounded" src="assets/img/showcases/showcase-1/data.jpg"/>
+                        </div>                        
+                        <div class="col-md-6 col-md-offset-1">
+                            <div class="descriptionright">
+                                <h4 class="header-text"><b>Helpdesk Support</b></h4>
+                                <p>A dedicated expert will guide you every step of the way, providing personalized user support, managing software updates and upgrades, and delivering proactive solutions tailored to your needs. With rapid response times and attentive care, we’re committed to building a long-term partnership that keeps your Yardi system running flawlessly.</p>
+                                <p>By continuously monitoring system performance and anticipating potential challenges, we ensure your operations remain smooth and efficient, allowing you to focus on what matters most, growing your business with confidence and peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>                    
                     <div class="row">
                         <div class="col-md-6">
                             <div class="description">
@@ -146,11 +162,11 @@
                     </div>                    
                 </div>
             </div>                  
-            <div class="section section-testimonial" id="Testimonials">
+            <!-- <div class="section section-testimonial" id="Testimonials">
                 <div class="container">
                     <h4 class="header-text text-center" style="padding-top: 20px;">Testimonials</h4>
                     <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
-                        <!-- Wrapper for slides -->
+                        
                         <div class="carousel-inner" role="listbox">
                             <div class="item">
                                 <div class="mask">
@@ -187,7 +203,7 @@
                         </ol>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="section section-demo" id="contact_us">
                 <div class="container">
                     <div class="row">
@@ -198,7 +214,7 @@
                             <h4 class="header-text">Contact Us</h4>
                             <p>
                                 Block B, Office B11-121 <br> Sharjah Research, Technology & Innovation Park <br> Sharjah, UAE. <br> P.O. Box 66636 <br><br>
-                                Email: patrickremos@artisanitsolutions.com
+                                Email: support@artisanitsolutions.com
                             </p>
                         </div>
                     </div>
@@ -223,6 +239,21 @@
             } else if (window.scrollY < 56){
                 navEl.classList.remove('navbar-scrolled');
             }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', (event) => {
+                const targetId = anchor.getAttribute('href');
+                if (!targetId || targetId === '#') {
+                    return;
+                }
+                const targetEl = document.querySelector(targetId);
+                if (!targetEl) {
+                    return;
+                }
+                event.preventDefault();
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
         });
     </script>
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
