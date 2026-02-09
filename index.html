@@ -27,13 +27,13 @@
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
                     </button>
-                    <a href="https://www.artisanitsolutions.com" class="hidden-sm hidden-md hidden-lg">
+                    <!-- <a href="https://www.artisanitsolutions.com" class="hidden-sm hidden-md hidden-lg">
                         <div class="logo-container">
                             <div class="brand brand--offset brand--pop">
                                 ARTISAN
                             </div>
                         </div>
-                    </a>                    
+                    </a>                     -->
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="example" >
@@ -76,7 +76,7 @@
                 <div class= "container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="h1description hidden-xs">
+                            <div class="h1description">
                                 <h1><span class="hero-title-transparent">ARTISAN</span></h1>
                             </div>
                         </div>
@@ -241,7 +241,7 @@
             }
         });
 
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        document.querySelectorAll('.navbar a[href^="#"]').forEach((anchor) => {
             anchor.addEventListener('click', (event) => {
                 const targetId = anchor.getAttribute('href');
                 if (!targetId || targetId === '#') {
@@ -252,7 +252,14 @@
                     return;
                 }
                 event.preventDefault();
-                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const navOffset = document.querySelector('.navbar')?.offsetHeight ?? 0;
+                const targetTop = targetEl.getBoundingClientRect().top + window.scrollY - navOffset;
+                if (window.jQuery) {
+                    jQuery('html, body').stop().animate({ scrollTop: targetTop }, 600);
+                    jQuery('.navbar-collapse').collapse('hide');
+                } else {
+                    window.scrollTo({ top: targetTop, behavior: 'smooth' });
+                }
             });
         });
     </script>
