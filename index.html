@@ -1,336 +1,1107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="assets/img/code.svg">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Artisan Solutions</title>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Artisan Solutions Dedicated Yardi consulting for enterprise real estate firms. Specialist helpdesk support, bespoke report customisation, and Yardi data migration across Ireland, USA, and Saudi Arabia."/>
+<title>Artisan Solutions Yardi Consulting</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+/* ─── TOKENS ─────────────────────────────────────────── */
+:root{
+  --navy:     #1B2D4F;
+  --navy-dk:  #0F1B30;
+  --navy-md:  #243660;
+  --navy-lt:  #2E4275;
+  --copper:   #B5652A;
+  --copper-lt:#C97C42;
+  --copper-pl:#F0DDD0;
+  --copper-ms:#FAF0E8;
+  --sand:     #F7F3EE;
+  --linen:    #EDE8E1;
+  --pebble:   #C8C0B4;
+  --slate:    #6B7280;
+  --ink:      #1A1A1A;
+  --white:    #FFFFFF;
+  --serif: 'Lora', Georgia, serif;
+  --sans:  'DM Sans', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--sand);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden;}
 
-        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-        <meta name="viewport" content="width=device-width" />
+/* ─── SCROLL PROGRESS ─────────────────────────────────── */
+#prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:500;background:transparent;}
+#prog-bar{height:100%;width:0;background:var(--copper);transition:width .08s linear;}
 
-        <link href="assets/css/bootstrap.css" rel="stylesheet" />
-        <link href="assets/css/landing-page.css" rel="stylesheet"/>
-        <!--     Fonts and icons     -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
-        <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    </head>
-    <body class="landing-page landing-page1">
-        <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar bar1"></span>
-                    <span class="icon-bar bar2"></span>
-                    <span class="icon-bar bar3"></span>
-                    </button>
-                    <!-- <a href="https://www.artisanitsolutions.com" class="hidden-sm hidden-md hidden-lg">
-                        <div class="logo-container">
-                            <div class="brand brand--offset brand--pop">
-                                ARTISAN
-                            </div>
-                        </div>
-                    </a>                     -->
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="example" >
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#home_section">
-                            Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about_section">
-                            About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#services_section">
-                            Services
-                            </a>
-                        </li>                        
-                        <!-- <li>
-                            <a href="#Testimonials">
-                            Testimonials
-                            </a>
-                        </li> -->
-                        <li>
-                            <a href="#contact_us">
-                            Contact Us
-                            </a>
-                        </li>                        
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-        </nav>
-        <div class="wrapper">
-            <div class="parallax filter-gradient orange" data-color="orange" id="home_section">
-                <div class="parallax-background">
-                    <img class="parallax-background-image" src="assets/img/showcases/showcase-1/skyline.jpg">
-                </div>
-                <div class= "container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="h1description">
-                                <h1><span class="hero-title-transparent">ARTISAN</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section section-gray section-clients" id="about_section">
-                <div class="container text-center">
-                    <h4 class="header-text">About Us</h4>
-                    <p>
-                        With over 12 years of hands-on experience working across the Yardi product suite, we specialize in helping our clients with their property management operations. 
-                        Our expertise spans helpdesk support, custom development, and data migration, giving us a deep, end-to-end understanding of both the technical and day-to-day realities of Yardi users. 
-                        Whether it’s troubleshooting issues, building tailored solutions, or migrating critical data with accuracy and confidence, we focus on practical results that support real business needs. 
-                        We partner closely with our clients to optimize business processes, reduce friction for end users, and improve overall system efficiency. 
-                        ur approach is hands-on, responsive, and grounded in real-world experience.
-                        <br>
-                    </p>
-                    <!-- <div class="logos">
-                        <ul class="list-unstyled">
-                            <li ><img src="assets/img/logos/KWE.png"/></li>
-                            <li ><img src="assets/img/logos/Post.png"/></li>
-                            <li ><img src="assets/img/logos/Beco.png"/></i>
-                            <li ><img src="assets/img/logos/D2D.png"/></li>
-                            <li ><img src="assets/img/logos/Arcis.png"/></li>
-                        </ul>
-                    </div> -->
-                </div>
-            </div>
-            <div class="section section-presentation section-gray" id="services_section">
-                <div class="container text-center">
-                    <h4 class="header-text section-title-spaced">Our Expertise</h4>
-                </div>
-                <div class="container">
-                    <div class="services-showcase">
-                        <div class="services-menu">
-                            <div class="services-menu-title">Services</div>
-                            <ul class="services-menu-list">
-                                <li class="services-menu-item is-active" data-title="Helpdesk Support" data-body="A dedicated expert will guide you every step of the way, providing personalized user support, managing software updates and upgrades, and delivering proactive solutions tailored to your needs.||By continuously monitoring system performance and anticipating potential challenges, we ensure your operations remain smooth and efficient." data-image="assets/img/showcases/showcase-1/HelpDeskSupport.png" data-link="#contact_us">
-                                    <span class="services-menu-text">Helpdesk Support</span>
-                                </li>
-                                <li class="services-menu-item" data-title="Custom Development" data-body="Our team of experts has extensive experience in creating custom reports that meet the unique needs of our clients.||We use Yardi reporting tools to deliver insights and automate notifications tailored to your needs." data-image="assets/img/showcases/showcase-1/reports.jpg" data-link="#contact_us">
-                                    <span class="services-menu-text">Custom Development</span>
-                                </li>
-                                <li class="services-menu-item" data-title="Data Migration" data-body="We specialize in Yardi data migration to help clients seamlessly transfer property data from legacy systems to Yardi software.||We work closely with clients to build a tailored migration strategy that minimizes disruptions." data-image="assets/img/showcases/showcase-1/data.jpg" data-link="#contact_us">
-                                    <span class="services-menu-text">Data Migration</span>
-                                </li>
-                                <li class="services-menu-item" data-title="Application Development" data-body="Our full stack developers build Microsoft stack solutions that are intuitive, easy to use, and highly functional.||We deliver custom applications using C#, ASP.NET, SQL Server, Visual Studio, and Azure." data-image="assets/img/showcases/showcase-1/dev.jpg" data-link="#contact_us">
-                                    <span class="services-menu-text">Application Development</span>
-                                </li>
-                            </ul>
-                            <div class="services-menu-controls">
-                                <button class="services-control" type="button" data-direction="prev" aria-label="Previous service">&#x2039;</button>
-                                <button class="services-control" type="button" data-direction="next" aria-label="Next service">&#x203A;</button>
-                            </div>
-                        </div>
-                        <div class="services-visual">
-                            <img class="services-image service-image-rounded" src="assets/img/showcases/showcase-1/HelpDeskSupport.png" alt="Service showcase" />
-                        </div>
-                        <div class="services-card">
-                            <h4 class="header-text services-card-title">Helpdesk Support</h4>
-                            <div class="services-card-body">
-                                <p>A dedicated expert will guide you every step of the way, providing personalized user support, managing software updates and upgrades, and delivering proactive solutions tailored to your needs.</p>
-                                <p>By continuously monitoring system performance and anticipating potential challenges, we ensure your operations remain smooth and efficient.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-stack"></div>
-                </div>
-            </div>                  
-            <!-- <div class="section section-testimonial" id="Testimonials">
-                <div class="container">
-                    <h4 class="header-text text-center" style="padding-top: 20px;">Testimonials</h4>
-                    <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
-                        
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item">
-                                <div class="mask">
-                                    <img src="assets/img/faces/David.jpg">
-                                </div>
-                                <div class="carousel-testimonial-caption">
-                                    <p>David Cruice</p>
-                                    <h3>"Having worked with Patrick on numerous Yardi Spreadsheet Reporting projects, I can recommend him without hesitation."</h3>
-                                </div>
-                            </div>
-                            <div class="item active">
-                                <div class="mask">
-                                    <img src="assets/img/faces/Ryan.jpg">
-                                </div>
-                                <div class="carousel-testimonial-caption">
-                                    <p>Ryan Benevides</p>
-                                    <h3>"I was very pleased with the subject matter expertise, project execution and final product. I will work with Patrick again and recommend to others."</h3>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="mask">
-                                    <img src="assets/img/faces/Jake.jpg">
-                                </div>
-                                <div class="carousel-testimonial-caption">
-                                    <p>Jake Counne</p>
-                                    <h3>"I worked with Patrick on a custom SQL report. His talent shows in the work he produces. I would use him again in the blink of an eye."</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <ol class="carousel-indicators carousel-indicators-orange">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-                    </div>
-                </div>
-            </div> -->
-            <div class="section section-demo" id="contact_us">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <iframe class="map-embed map-embed-rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.4671053717225!2d55.48572707522203!3d25.32210222663064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f5df14e533d%3A0x73cc61cd6d65a7e3!2sSharjah%20Research%20Technology%20and%20Innovation%20Park!5e0!3m2!1sen!2snl!4v1683115006740!5m2!1sen!2snl" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="col-md-5 col-md-offset-1">
-                            <h4 class="header-text">Contact Us</h4>
-                            <p>
-                                Block B, Office B11-121 <br> Sharjah Research, Technology & Innovation Park <br> Sharjah, UAE. <br> P.O. Box 66636 <br><br>
-                                Email: support@artisanitsolutions.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-            <footer class="footer">
-                <div class="container">
-                    <div class="copyright">
-                        &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://artisanitsolutions.com">Artisan Solutions</a>
-                    </div>
-                </div>
-            </footer>
-        </div>
+/* ─── NAV ─────────────────────────────────────────────── */
+nav{
+  position:fixed;top:3px;left:0;right:0;z-index:400;
+  background:rgba(247,243,238,.95);backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--linen);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 52px;height:64px;transition:box-shadow .3s;
+}
+nav.scrolled{box-shadow:0 2px 24px rgba(27,45,79,.08);}
+.nav-logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.nav-logo-top{font-family:var(--serif);font-size:.92rem;font-weight:600;color:var(--navy);letter-spacing:.12em;text-transform:uppercase;}
+.nav-logo-bot{font-family:var(--serif);font-size:.62rem;font-style:italic;color:var(--copper);letter-spacing:.1em;}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center;}
+.nav-links a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);text-decoration:none;font-weight:400;transition:color .2s;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px;background:var(--copper);transform:scaleX(0);transition:transform .25s;}
+.nav-links a:hover{color:var(--copper);}
+.nav-links a:hover::after{transform:scaleX(1);}
+.nav-cta{
+  padding:10px 24px;background:var(--navy);color:var(--white);
+  font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:400;
+  text-decoration:none;border-radius:1px;transition:background .25s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--copper);}
+
+/* Mobile nav toggle */
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--navy);transition:all .3s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+
+/* Mobile menu */
+.mobile-menu{
+  position:fixed;top:67px;left:0;right:0;bottom:0;z-index:399;
+  background:var(--sand);padding:48px 32px;
+  display:flex;flex-direction:column;gap:28px;
+  transform:translateX(100%);transition:transform .35s ease;overflow-y:auto;
+}
+.mobile-menu.open{transform:translateX(0);}
+.mobile-menu a{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--linen);padding-bottom:20px;}
+.mobile-menu a:hover{color:var(--copper);}
+.mobile-menu .m-cta{margin-top:8px;padding:14px 28px;background:var(--navy);color:var(--white);text-align:center;font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-radius:1px;border:none;}
+
+/* ─── SECTIONS ─────────────────────────────────────────── */
+.section{padding:100px 0;}
+.section.alt{background:var(--white);}
+.section.navy{background:var(--navy);}
+.section.linen{background:var(--linen);}
+.wrap{max-width:1080px;margin:0 auto;padding:0 52px;}
+
+/* ─── REVEAL ANIMATION ─────────────────────────────────── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.reveal-left{opacity:0;transform:translateX(-28px);transition:opacity .7s ease,transform .7s ease;}
+.reveal-left.visible{opacity:1;transform:none;}
+.reveal-right{opacity:0;transform:translateX(28px);transition:opacity .7s ease,transform .7s ease;}
+.reveal-right.visible{opacity:1;transform:none;}
+
+/* ─── SHARED TYPOGRAPHY ─────────────────────────────────── */
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--copper);font-weight:500;margin-bottom:16px;
+}
+.chip::before{content:'';width:20px;height:1.5px;background:var(--copper);}
+.chip.light{color:rgba(181,101,42,.7);}
+.chip.light::before{background:rgba(181,101,42,.5);}
+
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;}
+h1{font-size:clamp(3rem,6.5vw,5.5rem);letter-spacing:-.01em;}
+h2{font-size:clamp(1.8rem,3.5vw,2.8rem);}
+h3{font-size:1.15rem;font-weight:500;}
+em.cu{font-style:italic;color:var(--copper);}
+em.wh{font-style:italic;color:rgba(255,255,255,.65);}
+.rule{width:40px;height:2px;background:var(--copper);border-radius:1px;margin:22px 0 44px;}
+.rule.light{background:rgba(181,101,42,.5);}
+p.lead{font-size:1.05rem;color:var(--slate);line-height:1.9;max-width:520px;}
+p.body{font-size:.9rem;color:var(--slate);line-height:1.9;}
+
+/* ─── BUTTONS ───────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 32px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:400;text-decoration:none;border-radius:1px;
+  transition:background .25s,color .25s,box-shadow .25s;cursor:pointer;border:none;
+  font-family:var(--sans);
+}
+.btn-primary{background:var(--navy);color:var(--white);}
+.btn-primary:hover{background:var(--copper);box-shadow:0 8px 24px rgba(181,101,42,.25);}
+.btn-ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy);}
+.btn-ghost:hover{background:var(--navy);color:var(--white);}
+.btn-copper{background:var(--copper);color:var(--white);}
+.btn-copper:hover{background:var(--navy);}
+.btn svg{transition:transform .25s;}
+.btn:hover svg{transform:translateX(4px);}
+
+/* ─── HERO ──────────────────────────────────────────────── */
+#hero{
+  min-height:100vh;background:var(--sand);
+  display:flex;align-items:center;padding:130px 0 80px;
+  position:relative;overflow:hidden;
+}
+.hero-navy-panel{
+  position:absolute;right:0;top:0;bottom:0;width:44%;
+  background:var(--navy);
+  clip-path:polygon(9% 0,100% 0,100% 100%,0% 100%);
+}
+.hero-glow{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at 35% 55%,rgba(181,101,42,.09) 0%,transparent 65%);
+  pointer-events:none;
+}
+/* Concentric rings on navy panel */
+.hero-ring{
+  position:absolute;border-radius:50%;
+  border:1px solid rgba(181,101,42,.12);pointer-events:none;
+}
+.hr1{width:500px;height:500px;right:-14%;top:50%;transform:translateY(-50%);}
+.hr2{width:360px;height:360px;right:-5%;top:50%;transform:translateY(-50%);}
+.hr3{width:220px;height:220px;right:5%;top:50%;transform:translateY(-50%);}
+/* Ghost wordmark on panel */
+.hero-ghost{
+  position:absolute;right:0;top:50%;transform:translateY(-50%);
+  writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;
+  font-size:clamp(5rem,10vw,10rem);color:rgba(255,255,255,.03);
+  letter-spacing:.04em;text-transform:uppercase;pointer-events:none;user-select:none;
+  white-space:nowrap;padding-right:12px;
+}
+
+.hero-inner{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:0 52px;}
+.hero-ey{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--copper);margin-bottom:28px;font-weight:500;opacity:0;animation:fadeUp .6s .1s forwards;}
+.hero-h1{font-family:var(--serif);font-size:clamp(3rem,7vw,5.6rem);font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);line-height:.95;margin-bottom:8px;opacity:0;animation:fadeUp .75s .25s forwards;}
+.hero-h1-sub{font-family:var(--serif);font-size:clamp(1.1rem,2.5vw,1.9rem);font-style:italic;color:var(--copper);letter-spacing:.06em;margin-bottom:28px;opacity:0;animation:fadeUp .7s .4s forwards;}
+.hero-tagline{font-family:var(--serif);font-size:clamp(.95rem,1.8vw,1.2rem);font-style:italic;color:var(--slate);margin-bottom:48px;max-width:400px;opacity:0;animation:fadeUp .7s .54s forwards;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp .7s .68s forwards;}
+.hero-markets{
+  display:flex;gap:28px;flex-wrap:wrap;margin-top:56px;
+  padding-top:32px;border-top:1px solid var(--linen);
+  opacity:0;animation:fadeUp .7s .82s forwards;
+}
+.hero-market{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);display:flex;align-items:center;gap:7px;font-weight:400;}
+.hero-market::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--copper);opacity:.6;flex-shrink:0;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+
+/* ─── TRUST BAR ─────────────────────────────────────────── */
+#trust{background:var(--navy-dk);padding:0;border-top:2px solid var(--copper);}
+.trust-inner{
+  max-width:1080px;margin:0 auto;padding:0 52px;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:rgba(255,255,255,.04);
+}
+.trust-item{
+  padding:36px 28px;display:flex;flex-direction:column;
+  align-items:flex-start;gap:6px;background:var(--navy-dk);
+  transition:background .25s;
+}
+.trust-item:hover{background:var(--navy);}
+.trust-num{font-family:var(--serif);font-size:2rem;font-style:italic;font-weight:400;color:var(--copper);}
+.trust-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);font-weight:400;}
+
+/* ─── ABOUT ─────────────────────────────────────────────── */
+#about{background:var(--white);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:64px;}
+.about-text p{font-size:.95rem;color:var(--slate);line-height:1.9;margin-bottom:16px;}
+.about-text p strong{color:var(--navy);font-weight:500;}
+.about-callout{
+  background:var(--sand);padding:48px 40px;
+  border-left:3px solid var(--copper);
+  position:relative;
+}
+.about-callout::before{
+  content:'"'  ;font-family:var(--serif);font-size:6rem;
+  color:var(--copper-pl);line-height:1;position:absolute;top:12px;left:28px;
+}
+.about-callout p{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--navy);line-height:1.6;padding-top:28px;position:relative;z-index:1;}
+.about-callout cite{display:block;margin-top:20px;font-family:var(--sans);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);font-style:normal;}
+
+/* ─── SERVICES ──────────────────────────────────────────── */
+#services{background:var(--sand);}
+.services-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;background:var(--linen);margin-top:56px;border:1px solid var(--linen);}
+.service-card{
+  background:var(--white);padding:56px 48px;
+  position:relative;overflow:hidden;
+  transition:background .3s;
+}
+.service-card:hover{background:var(--copper-ms);}
+.service-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--copper);transform:scaleX(0);transform-origin:left;
+  transition:transform .35s ease;
+}
+.service-card:hover::before{transform:scaleX(1);}
+.sc-num{font-family:var(--serif);font-size:3rem;font-style:italic;font-weight:400;color:var(--copper-pl);line-height:1;margin-bottom:24px;display:block;}
+.sc-title{font-family:var(--serif);font-size:1.55rem;font-weight:500;color:var(--navy);margin-bottom:16px;}
+.sc-desc{font-size:.9rem;color:var(--slate);line-height:1.85;margin-bottom:28px;}
+.sc-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.sc-list li{font-size:.88rem;color:var(--slate);display:flex;align-items:flex-start;gap:12px;line-height:1.6;}
+.sc-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--copper);margin-top:8px;flex-shrink:0;}
+.sc-link{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:500;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;transition:border-color .2s;}
+.sc-link:hover{border-color:var(--copper);}
+.sc-link svg{transition:transform .25s;}
+.sc-link:hover svg{transform:translateX(4px);}
+
+/* ─── WHY ARTISAN ───────────────────────────────────────── */
+#why{background:var(--navy);}
+#why .chip{color:rgba(181,101,42,.7);}
+#why .chip::before{background:rgba(181,101,42,.5);}
+#why h2{color:var(--white);}
+#why .rule{background:rgba(181,101,42,.4);}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:52px;}
+.why-card{
+  padding:36px 32px;background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.06);
+  transition:background .25s,border-color .25s;
+}
+.why-card:hover{background:rgba(255,255,255,.07);border-color:rgba(181,101,42,.25);}
+.why-card-num{font-family:var(--serif);font-size:1.6rem;font-style:italic;color:rgba(181,101,42,.3);margin-bottom:14px;display:block;}
+.why-card h3{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--white);margin-bottom:10px;}
+.why-card p{font-size:.875rem;color:rgba(255,255,255,.42);line-height:1.8;}
+
+/* ─── PROCESS ───────────────────────────────────────────── */
+#process{background:var(--white);}
+.process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:56px;position:relative;}
+.process-steps::before{
+  content:'';position:absolute;top:28px;left:10%;right:10%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--copper-pl),var(--copper-pl),transparent);
+  z-index:0;
+}
+.ps{display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;z-index:1;padding:0 12px;}
+.ps-circle{
+  width:56px;height:56px;border-radius:50%;
+  background:var(--navy);border:2px solid var(--copper);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--copper);
+  margin-bottom:20px;flex-shrink:0;transition:background .25s;
+}
+.ps:hover .ps-circle{background:var(--copper);}
+.ps:hover .ps-circle{color:var(--white);}
+.ps-title{font-family:var(--serif);font-size:.95rem;font-weight:500;color:var(--navy);margin-bottom:8px;}
+.ps-desc{font-size:.8rem;color:var(--slate);line-height:1.7;}
+
+/* ─── MARKETS ───────────────────────────────────────────── */
+#markets{background:var(--sand);}
+.markets-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--linen);margin-top:52px;border:1px solid var(--linen);}
+.market-card{
+  background:var(--white);padding:44px 32px;text-align:center;
+  transition:background .25s;
+}
+.market-card:hover{background:var(--copper-ms);}
+.market-flag{display:block;margin:0 auto 20px;width:72px;height:48px;border-radius:3px;overflow:hidden;box-shadow:0 2px 8px rgba(27,45,79,.15);}
+.market-name{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--navy);margin-bottom:10px;}
+.market-desc{font-size:.82rem;color:var(--slate);line-height:1.75;}
+
+/* ─── TESTIMONIAL ───────────────────────────────────────── */
+#testimonial{background:var(--linen);padding:96px 0;}
+.testimonial-inner{max-width:760px;margin:0 auto;padding:0 52px;text-align:center;}
+.t-quote-mark{font-family:var(--serif);font-size:5rem;color:var(--copper-pl);line-height:1;margin-bottom:-16px;display:block;}
+.t-quote{font-family:var(--serif);font-size:clamp(1.1rem,2.2vw,1.5rem);font-style:italic;color:var(--navy);line-height:1.55;margin-bottom:32px;}
+.t-rule{width:40px;height:2px;background:var(--copper);margin:0 auto 20px;border-radius:1px;}
+.t-cite{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper);font-weight:500;}
+
+/* ─── CONTACT / CTA ─────────────────────────────────────── */
+#contact{background:var(--navy-dk);padding:100px 0;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.contact-left h2{color:var(--white);}
+.contact-left .rule{background:rgba(181,101,42,.4);}
+.contact-left p{font-size:.95rem;color:rgba(255,255,255,.45);line-height:1.9;margin-bottom:32px;max-width:400px;}
+.contact-details{display:flex;flex-direction:column;gap:16px;}
+.cd{display:flex;align-items:flex-start;gap:14px;}
+.cd-icon{width:36px;height:36px;background:rgba(181,101,42,.12);border:1px solid rgba(181,101,42,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cd-icon svg{width:14px;height:14px;stroke:var(--copper);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.cd-content{}
+.cd-label{font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(181,101,42,.6);font-weight:500;display:block;margin-bottom:2px;}
+.cd-value{font-size:.9rem;color:rgba(255,255,255,.65);}
+.cd-value a{color:rgba(255,255,255,.65);text-decoration:none;transition:color .2s;}
+.cd-value a:hover{color:var(--copper-lt);}
+
+/* Contact form */
+.contact-form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);padding:44px 40px;}
+.form-row{margin-bottom:20px;}
+.form-row label{display:block;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(181,101,42,.7);margin-bottom:8px;font-weight:500;}
+.form-row input,.form-row select,.form-row textarea{
+  width:100%;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  color:rgba(255,255,255,.8);font-family:var(--sans);font-size:.9rem;font-weight:300;
+  padding:13px 16px;outline:none;transition:border-color .25s;
+  -webkit-appearance:none;appearance:none;
+}
+.form-row input::placeholder,.form-row textarea::placeholder{color:rgba(255,255,255,.2);}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{border-color:rgba(181,101,42,.5);}
+.form-row textarea{height:110px;resize:vertical;}
+.form-row select{cursor:pointer;color:rgba(255,255,255,.5);}
+.form-row select option{background:var(--navy-dk);color:rgba(255,255,255,.8);}
+.form-2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-submit{width:100%;margin-top:8px;}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padding:56px 52px 36px;}
+.footer-inner{max-width:1080px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px;}
+.footer-brand{}
+.footer-logo-top{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);}
+.footer-logo-bot{font-family:var(--serif);font-size:.72rem;font-style:italic;color:rgba(181,101,42,.5);letter-spacing:.1em;}
+.footer-tagline{font-family:var(--serif);font-size:.82rem;font-style:italic;color:rgba(255,255,255,.18);margin-top:16px;line-height:1.6;}
+.footer-col h4{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(181,101,42,.6);font-weight:500;margin-bottom:20px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li a{font-size:.85rem;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s;}
+.footer-col ul li a:hover{color:var(--copper-lt);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-copy{font-size:.8rem;color:rgba(255,255,255,.18);}
+.footer-legal{display:flex;gap:20px;}
+.footer-legal a{font-size:.8rem;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s;}
+.footer-legal a:hover{color:var(--copper-lt);}
+
+/* ─── BACK TO TOP ───────────────────────────────────────── */
+.back-top{
+  position:fixed;bottom:32px;right:32px;z-index:300;
+  width:44px;height:44px;background:var(--navy);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;opacity:0;transition:opacity .3s,background .25s;
+  pointer-events:none;
+}
+.back-top.visible{opacity:1;pointer-events:auto;}
+.back-top:hover{background:var(--copper);}
+.back-top svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media(max-width:1024px){
+  .about-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .process-steps{grid-template-columns:1fr 1fr;gap:32px;}
+  .process-steps::before{display:none;}
+}
+@media(max-width:768px){
+  nav{padding:0 24px;height:60px;}
+  .nav-links,.nav-cta{display:none;}
+  .nav-hamburger{display:flex;}
+  .wrap{padding:0 24px;}
+  .section{padding:72px 0;}
+  h1{font-size:clamp(2.4rem,10vw,3.5rem);}
+  .hero-inner{padding:0 24px;}
+  .hero-navy-panel,.hero-ghost{display:none;}
+  .trust-inner{grid-template-columns:1fr 1fr;}
+  .services-grid{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .markets-grid{grid-template-columns:1fr 1fr;}
+  .footer-top{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+  .form-2col{grid-template-columns:1fr;}
+  .testimonial-inner{padding:0 24px;}
+  .process-steps{grid-template-columns:1fr;}
+  footer{padding:48px 24px 28px;}
+}
+@media(max-width:480px){
+  .trust-inner{grid-template-columns:1fr;}
+  .markets-grid{grid-template-columns:1fr;}
+  .hero-btns{flex-direction:column;}
+  .hero-btns .btn{justify-content:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- Progress -->
+<div id="prog"><div id="prog-bar"></div></div>
+
+<!-- ═══════ NAV ═══════ -->
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">
+    <span class="nav-logo-top">ARTISAN</span>
+    <span class="nav-logo-bot">Solutions</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#markets">Markets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta btn" href="#contact">Get in touch</a>
+  <div class="nav-hamburger" id="hamburger" role="button" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#why" class="mobile-link">Why Us</a>
+  <a href="#process" class="mobile-link">Process</a>
+  <a href="#markets" class="mobile-link">Markets</a>
+  <a href="#contact" class="mobile-cta btn btn-primary m-cta">Get in touch</a>
+</div>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <div class="hero-navy-panel"><div class="hero-glow"></div></div>
+  <div class="hero-ring hr1"></div>
+  <div class="hero-ring hr2"></div>
+  <div class="hero-ring hr3"></div>
+  <div class="hero-ghost">ARTISAN</div>
+
+  <div class="hero-inner">
+    <p class="hero-ey">Yardi Consulting · Based in the UAE · artisanitsolutions.com</p>
+    <h1 class="hero-h1">ARTISAN</h1>
+    <div class="hero-h1-sub">Solutions</div>
+    <p class="hero-tagline">"Crafted support. Measurable results."</p>
+    <p style="font-size:.95rem;color:var(--slate);line-height:1.85;max-width:440px;margin-bottom:44px;font-weight:300;opacity:0;animation:fadeUp .7s .56s forwards;">Specialist helpdesk support, bespoke report customisation, and Yardi data migration for enterprise real estate firms. Exclusively Yardi, serving clients across three markets from our base in the UAE.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="#contact">
+        Begin the conversation
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#services">Our services</a>
     </div>
-    </body>
-    <script>
-        const navEl = document.querySelector('.navbar');
-        window.addEventListener('scroll', () =>{
-            if(window.scrollY >= 56){
-                navEl.classList.add('navbar-scrolled');
+    <div class="hero-markets">
+      <span class="hero-market">Ireland</span>
+      <span class="hero-market">United States</span>
+      
+      <span class="hero-market">Saudi Arabia</span>
+    </div>
+  </div>
+</section>
 
-            } else if (window.scrollY < 56){
-                navEl.classList.remove('navbar-scrolled');
-            }
-        });
+<!-- ═══════ TRUST BAR ═══════ -->
+<div id="trust">
+  <div class="trust-inner">
+    <div class="trust-item reveal">
+      <span class="trust-num">100%</span>
+      <span class="trust-label">Yardi Focus</span>
+    </div>
+    <div class="trust-item reveal">
+      <span class="trust-num">3</span>
+      <span class="trust-label">Client Markets</span>
+    </div>
+    <div class="trust-item reveal">
+      <span class="trust-num">&lt;2hr</span>
+      <span class="trust-label">First Response SLA</span>
+    </div>
+    <div class="trust-item reveal">
+      <span class="trust-num">3</span>
+      <span class="trust-label">Core Services</span>
+    </div>
+  </div>
+</div>
 
-        document.querySelectorAll('.navbar a[href^="#"]').forEach((anchor) => {
-            anchor.addEventListener('click', (event) => {
-                const targetId = anchor.getAttribute('href');
-                if (!targetId || targetId === '#') {
-                    return;
-                }
-                const targetEl = document.querySelector(targetId);
-                if (!targetEl) {
-                    return;
-                }
-                event.preventDefault();
-                const navOffset = document.querySelector('.navbar')?.offsetHeight ?? 0;
-                const targetTop = targetEl.getBoundingClientRect().top + window.scrollY - navOffset;
-                if (window.jQuery) {
-                    jQuery('html, body').stop().animate({ scrollTop: targetTop }, 600);
-                    jQuery('.navbar-collapse').collapse('hide');
-                } else {
-                    window.scrollTo({ top: targetTop, behavior: 'smooth' });
-                }
-            });
-        });
+<!-- ═══════ ABOUT ═══════ -->
+<section id="about" class="section alt">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="chip">About Artisan Solutions</span>
+      <h2>Not a vendor. <em class="cu">A trusted authority.</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal-left">
+        <p>Artisan Solutions was founded on a single conviction: that the Yardi ecosystem deserves a <strong>specialist</strong>, not a generalist who also happens to know Yardi.</p>
+        <p>We work exclusively within the Yardi product suite. No Salesforce practice. No IT generalism. No distractions. Every team member, every SLA, every report is built around one ecosystem, mastered completely.</p>
+        <p>Our clients are enterprise real estate and property management firms across <strong>Ireland, USA, and Saudi Arabia</strong>, where a Yardi failure at month-end is not a technical problem. It is a business crisis.</p>
+        <p>We are selective about the engagements we take on. Because doing exceptional work requires genuine attention, and we give it every time.</p>
+        <div style="margin-top:32px;">
+          <a class="btn btn-primary" href="#contact">
+            Work with us
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="about-callout">
+          <p>"What separates good support from great support is not the tools used. It is the depth of knowledge behind them. Artisan Solutions understands Yardi the way a surgeon understands anatomy."</p>
+          <cite>Senior Director, Property Operations · Enterprise client, Dublin</cite>
+        </div>
+        <div style="margin-top:20px;padding:28px 32px;background:var(--copper-pl);border-left:2px solid var(--copper);">
+          <p style="font-size:.88rem;color:var(--navy);line-height:1.75;font-family:var(--serif);font-style:italic;">"The Yardi partner who stays."</p>
+          <p style="font-size:.8rem;color:var(--slate);margin-top:8px;line-height:1.7;">We are not a one-off engagement. We are the firm you call the first time, and keep calling, because we already know your system, your team, and what you need before you ask.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        const servicesMenuItems = Array.from(document.querySelectorAll('.services-menu-item'));
-        const servicesImage = document.querySelector('.services-visual img');
-        const servicesTitle = document.querySelector('.services-card-title');
-        const servicesBody = document.querySelector('.services-card-body');
+<!-- ═══════ SERVICES ═══════ -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="chip">What We Do</span>
+      <h2>Three services. <em class="cu">Perfected.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">We do three things, and we do all of them at the highest level. No scope creep, no generalist shortcutting. Just deep, practised expertise in the three areas where Yardi clients need it most.</p>
+    </div>
+    <div class="services-grid reveal">
 
-        const renderService = (item) => {
-            if (!item) {
-                return;
-            }
-            servicesMenuItems.forEach((menuItem) => menuItem.classList.remove('is-active'));
-            item.classList.add('is-active');
+      <!-- Service 1 -->
+      <div class="service-card">
+        <span class="sc-num">01</span>
+        <h3 class="sc-title">Yardi Helpdesk Support</h3>
+        <p class="sc-desc">A named account manager on your side. Someone who already knows your configuration, your team, and your priorities before you call. No ticket queues. No bots. No waiting.</p>
+        <ul class="sc-list">
+          <li>Named account manager assigned to your organisation</li>
+          <li>Formally defined SLAs with guaranteed response times</li>
+          <li>Full Yardi product suite coverage every module</li>
+          <li>Multi-timezone coverage: Ireland, USA, and Saudi Arabia</li>
+          <li>Yardi data migration legacy systems, property transfers, re-implementations</li>
+          <li>Priority escalation paths for critical issues</li>
+          <li>Proactive system monitoring and issue flagging</li>
+        </ul>
+        <a class="sc-link" href="#contact">
+          Learn more
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
 
-            const title = item.getAttribute('data-title') || '';
-            const body = item.getAttribute('data-body') || '';
-            const image = item.getAttribute('data-image') || '';
-            const cta = item.getAttribute('data-cta') || '';
-            const link = item.getAttribute('data-link') || '#';
+      <!-- Service 2 -->
+      <div class="service-card">
+        <span class="sc-num">02</span>
+        <h3 class="sc-title">Report Customisation</h3>
+        <p class="sc-desc">Standard Yardi reports answer standard questions. We build the ones that answer yours precise, reliable, structured around your portfolio, your KPIs, and the way your leadership reads numbers.</p>
+        <ul class="sc-list">
+          <li>Bespoke report design and build from requirements</li>
+          <li>Custom KPI dashboards for leadership and operations</li>
+          <li>Portfolio-level and asset-level reporting</li>
+          <li>GL reconciliation and financial report validation</li>
+          <li>Integration with client BI tools and data warehouses</li>
+          <li>Ongoing report maintenance, updates, and enhancements</li>
+        </ul>
+        <a class="sc-link" href="#contact">
+          Learn more
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
 
-            if (servicesImage && image) {
-                servicesImage.src = image;
-            }
-            if (servicesTitle) {
-                servicesTitle.textContent = title;
-            }
-            if (servicesBody) {
-                servicesBody.innerHTML = body
-                    .split('||')
-                    .map((paragraph) => `<p>${paragraph.trim()}</p>`)
-                    .join('');
-            }
-        };
+      <!-- Service 3 -->
+      <div class="service-card">
+        <span class="sc-num">03</span>
+        <h3 class="sc-title">Data Migration</h3>
+        <p class="sc-desc">Moving to Yardi, switching modules, or consolidating portfolios? We migrate your data cleanly, completely, and without disruption so your team picks up exactly where they left off, on day one.</p>
+        <ul class="sc-list">
+          <li>Legacy system to Yardi migration any source platform</li>
+          <li>Yardi-to-Yardi migrations across module upgrades</li>
+          <li>Property portfolio transfers and acquisitions</li>
+          <li>Data cleansing, deduplication and validation</li>
+          <li>GL mapping, chart of accounts restructuring</li>
+          <li>Post-migration reconciliation and sign-off support</li>
+        </ul>
+        <a class="sc-link" href="#contact">
+          Learn more
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
 
-        if (servicesMenuItems.length) {
-            servicesMenuItems.forEach((item) => {
-                item.addEventListener('click', () => renderService(item));
-            });
+    </div>
+  </div>
+</section>
 
-            const controls = document.querySelectorAll('.services-control');
-            controls.forEach((control) => {
-                control.addEventListener('click', () => {
-                    const direction = control.getAttribute('data-direction');
-                    const activeIndex = servicesMenuItems.findIndex((item) => item.classList.contains('is-active'));
-                    const nextIndex = direction === 'prev'
-                        ? (activeIndex - 1 + servicesMenuItems.length) % servicesMenuItems.length
-                        : (activeIndex + 1) % servicesMenuItems.length;
-                    renderService(servicesMenuItems[nextIndex]);
-                });
-            });
-        }
+<!-- ═══════ WHY ARTISAN ═══════ -->
+<section id="why" class="section navy">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="chip light">Why Artisan Solutions</span>
+      <h2>The <em class="wh">Artisan</em> difference.</h2>
+      <div class="rule light"></div>
+      <p style="font-size:1rem;color:rgba(255,255,255,.4);line-height:1.9;max-width:520px;">In an industry full of generalist IT providers and over-promised managed services contracts, Artisan Solutions is something different. Here is why our clients stay.</p>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <span class="why-card-num">01</span>
+        <h3>Exclusive Yardi Focus</h3>
+        <p>We work exclusively within the Yardi ecosystem. Every team member, every process, every SLA is structured around one product suite. The depth this creates cannot be replicated by a firm that also does Salesforce, IT helpdesk, and network infrastructure.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card-num">02</span>
+        <h3>Enterprise-Grade SLAs</h3>
+        <p>Formal service agreements with defined response times, named account managers, and clear escalation protocols. We put our commitments in writing because your operations depend on them being kept, every time.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card-num">03</span>
+        <h3>Multi-Market Presence</h3>
+        <p>Clients in Ireland, USA, and Saudi Arabia. We understand the nuances of each market: from BTR and social housing in Ireland, to enterprise REITs in the US, to Vision 2030 real estate in Saudi Arabia. All engagements are delivered remotely from our base in the UAE.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card-num">04</span>
+        <h3>We Pick Up</h3>
+        <p>Reach your account manager directly. Not a ticket portal. Not an offshore triage queue. A person who knows your system answers your call because that is what a dedicated partner does, and it is the only standard we accept.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card-num">05</span>
+        <h3>Discretion by Design</h3>
+        <p>We do not publish a client list. We do not name our engagements publicly. The firms that trust us with their Yardi environments value that trust being kept and so do we.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card-num">06</span>
+        <h3>Selective by Principle</h3>
+        <p>We turn down work. Not because we cannot handle the volume but because doing exceptional work for every client requires genuine attention. We would rather serve fewer clients brilliantly than many clients adequately.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        const servicesStack = document.querySelector('.services-stack');
-        const renderServicesStack = () => {
-            if (!servicesStack || !servicesMenuItems.length) {
-                return;
-            }
-            const cards = servicesMenuItems.map((item) => {
-                const title = item.getAttribute('data-title') || '';
-                const body = item.getAttribute('data-body') || '';
-                const image = item.getAttribute('data-image') || '';
-                const cta = item.getAttribute('data-cta') || '';
-                const link = item.getAttribute('data-link') || '#';
-                const paragraphs = body
-                    .split('||')
-                    .map((paragraph) => `<p>${paragraph.trim()}</p>`)
-                    .join('');
+<!-- ═══════ PROCESS ═══════ -->
+<section id="process" class="section alt">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="chip">How We Work</span>
+      <h2>Onboarding in <em class="cu">five steps.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">From first conversation to full service in under two weeks. Every engagement follows the same structured onboarding so there is no ambiguity, no delay, and no surprises.</p>
+    </div>
+    <div class="process-steps reveal">
+      <div class="ps">
+        <div class="ps-circle">01</div>
+        <div class="ps-title">Discovery Call</div>
+        <p class="ps-desc">We learn your Yardi environment, current pain points, modules in use, and team structure. No commitment required.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-circle">02</div>
+        <div class="ps-title">SLA Design</div>
+        <p class="ps-desc">We draft a bespoke service agreement with defined response times, escalation paths, and named contacts.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-circle">03</div>
+        <div class="ps-title">Environment Audit</div>
+        <p class="ps-desc">A structured review of your Yardi configuration, data integrity, user permissions, and reporting requirements.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-circle">04</div>
+        <div class="ps-title">Onboarding</div>
+        <p class="ps-desc">Named account managers are assigned. Full documentation is created. Your team meets ours in person or remotely.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-circle">05</div>
+        <div class="ps-title">Go Live</div>
+        <p class="ps-desc">Full helpdesk and customisation service begins. Weekly check-ins during the first 30 days to ensure a clean start.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                return `
-                    <div class="services-stack-card">
-                        <img class="services-stack-image service-image-rounded" src="${image}" alt="${title}" />
-                        <div class="services-stack-content">
-                            <h4 class="header-text services-card-title">${title}</h4>
-                            ${paragraphs}
-                        </div>
-                    </div>
-                `;
-            });
+<!-- ═══════ MARKETS ═══════ -->
+<section id="markets" class="section">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="chip">Our Markets</span>
+      <h2>Three markets. <em class="cu">One standard.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">Based in Sharjah, UAE, serving enterprise real estate and property management clients across three markets. All engagements are delivered remotely by our team in the UAE.</p>
+    </div>
+    <div class="markets-grid reveal">
+      <div class="market-card">
+        <svg class="market-flag" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+          <rect width="300" height="600" fill="#169B62"/>
+          <rect x="300" width="300" height="600" fill="#FFFFFF"/>
+          <rect x="600" width="300" height="600" fill="#FF883E"/>
+        </svg>
+        <div class="market-name">Ireland</div>
+        <p class="market-desc">Dublin-based real estate and property management firms. Strong Yardi Voyager adoption across Build-to-Rent, commercial, and social housing sectors. Largest market by client tenure.</p>
+      </div>
+      <div class="market-card">
+        <svg class="market-flag" viewBox="0 0 190 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- 13 stripes -->
+          <rect width="190" height="100" fill="#BF0A30"/>
+          <rect y="7.7" width="190" height="7.7" fill="#FFFFFF"/>
+          <rect y="15.4" width="190" height="7.7" fill="#BF0A30"/>
+          <rect y="23.1" width="190" height="7.7" fill="#FFFFFF"/>
+          <rect y="30.8" width="190" height="7.7" fill="#BF0A30"/>
+          <rect y="38.5" width="190" height="7.7" fill="#FFFFFF"/>
+          <rect y="46.2" width="190" height="7.7" fill="#BF0A30"/>
+          <rect y="53.9" width="190" height="7.7" fill="#FFFFFF"/>
+          <rect y="61.6" width="190" height="7.7" fill="#BF0A30"/>
+          <rect y="69.3" width="190" height="7.7" fill="#FFFFFF"/>
+          <rect y="77" width="190" height="7.7" fill="#BF0A30"/>
+          <rect y="84.7" width="190" height="7.7" fill="#FFFFFF"/>
+          <!-- Canton -->
+          <rect width="76" height="53.9" fill="#002868"/>
+          <!-- Stars 5 rows of 6, 4 rows of 5 -->
+          <g fill="#FFFFFF" font-size="7">
+            <!-- Row 1 (6 stars) -->
+            <circle cx="6"  cy="5"  r="2.5"/><circle cx="18" cy="5"  r="2.5"/><circle cx="30" cy="5"  r="2.5"/>
+            <circle cx="42" cy="5"  r="2.5"/><circle cx="54" cy="5"  r="2.5"/><circle cx="66" cy="5"  r="2.5"/>
+            <!-- Row 2 (5 stars offset) -->
+            <circle cx="12" cy="11" r="2.5"/><circle cx="24" cy="11" r="2.5"/><circle cx="36" cy="11" r="2.5"/>
+            <circle cx="48" cy="11" r="2.5"/><circle cx="60" cy="11" r="2.5"/>
+            <!-- Row 3 -->
+            <circle cx="6"  cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><circle cx="30" cy="17" r="2.5"/>
+            <circle cx="42" cy="17" r="2.5"/><circle cx="54" cy="17" r="2.5"/><circle cx="66" cy="17" r="2.5"/>
+            <!-- Row 4 -->
+            <circle cx="12" cy="23" r="2.5"/><circle cx="24" cy="23" r="2.5"/><circle cx="36" cy="23" r="2.5"/>
+            <circle cx="48" cy="23" r="2.5"/><circle cx="60" cy="23" r="2.5"/>
+            <!-- Row 5 -->
+            <circle cx="6"  cy="29" r="2.5"/><circle cx="18" cy="29" r="2.5"/><circle cx="30" cy="29" r="2.5"/>
+            <circle cx="42" cy="29" r="2.5"/><circle cx="54" cy="29" r="2.5"/><circle cx="66" cy="29" r="2.5"/>
+            <!-- Row 6 -->
+            <circle cx="12" cy="35" r="2.5"/><circle cx="24" cy="35" r="2.5"/><circle cx="36" cy="35" r="2.5"/>
+            <circle cx="48" cy="35" r="2.5"/><circle cx="60" cy="35" r="2.5"/>
+            <!-- Row 7 -->
+            <circle cx="6"  cy="41" r="2.5"/><circle cx="18" cy="41" r="2.5"/><circle cx="30" cy="41" r="2.5"/>
+            <circle cx="42" cy="41" r="2.5"/><circle cx="54" cy="41" r="2.5"/><circle cx="66" cy="41" r="2.5"/>
+            <!-- Row 8 -->
+            <circle cx="12" cy="47" r="2.5"/><circle cx="24" cy="47" r="2.5"/><circle cx="36" cy="47" r="2.5"/>
+            <circle cx="48" cy="47" r="2.5"/><circle cx="60" cy="47" r="2.5"/>
+          </g>
+        </svg>
+        <div class="market-name">United States</div>
+        <p class="market-desc">Enterprise REITs and large property management companies. Deep Yardi ecosystem penetration across residential, commercial, and mixed-use portfolios. Served remotely across all time zones.</p>
+      </div>
 
-            servicesStack.innerHTML = cards.join('');
-        };
+      <div class="market-card">
+        <svg class="market-flag" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+          <rect width="900" height="600" fill="#006C35"/>
+          <!-- White horizontal band (shahada + sword area) -->
+          <!-- Sword blade -->
+          <path d="M180 340 L700 310 L710 330 L185 362 Z" fill="#FFFFFF"/>
+          <!-- Sword handle -->
+          <rect x="170" y="305" width="20" height="65" rx="4" fill="#FFFFFF"/>
+          <rect x="148" y="318" width="64" height="14" rx="3" fill="#FFFFFF"/>
+          <!-- Shahada text simplified white block representing Arabic script -->
+          <!-- Line 1: La ilaha illa Allah -->
+          <rect x="240" y="195" width="420" height="22" rx="4" fill="#FFFFFF" opacity=".95"/>
+          <rect x="280" y="195" width="8" height="22" rx="2" fill="#006C35"/>
+          <rect x="310" y="195" width="8" height="22" rx="2" fill="#006C35"/>
+          <rect x="350" y="195" width="12" height="22" rx="2" fill="#006C35"/>
+          <rect x="385" y="195" width="8" height="22" rx="2" fill="#006C35"/>
+          <rect x="420" y="195" width="16" height="22" rx="2" fill="#006C35"/>
+          <rect x="460" y="195" width="10" height="22" rx="2" fill="#006C35"/>
+          <rect x="495" y="195" width="14" height="22" rx="2" fill="#006C35"/>
+          <rect x="535" y="195" width="8" height="22" rx="2" fill="#006C35"/>
+          <rect x="565" y="195" width="12" height="22" rx="2" fill="#006C35"/>
+          <rect x="605" y="195" width="8" height="22" rx="2" fill="#006C35"/>
+          <!-- Dots / diacritics -->
+          <circle cx="295" cy="190" r="4" fill="#FFFFFF"/>
+          <circle cx="370" cy="190" r="4" fill="#FFFFFF"/>
+          <circle cx="510" cy="190" r="4" fill="#FFFFFF"/>
+          <!-- Line 2: Muhammad rasul Allah -->
+          <rect x="260" y="232" width="380" height="22" rx="4" fill="#FFFFFF" opacity=".95"/>
+          <rect x="295" y="232" width="8" height="22" rx="2" fill="#006C35"/>
+          <rect x="325" y="232" width="12" height="22" rx="2" fill="#006C35"/>
+          <rect x="360" y="232" width="8" height="22" rx="2" fill="#006C35"/>
+          <rect x="395" y="232" width="16" height="22" rx="2" fill="#006C35"/>
+          <rect x="435" y="232" width="10" height="22" rx="2" fill="#006C35"/>
+          <rect x="468" y="232" width="14" height="22" rx="2" fill="#006C35"/>
+          <rect x="505" y="232" width="8" height="22" rx="2" fill="#006C35"/>
+          <rect x="535" y="232" width="12" height="22" rx="2" fill="#006C35"/>
+          <circle cx="310" cy="227" r="4" fill="#FFFFFF"/>
+          <circle cx="450" cy="227" r="4" fill="#FFFFFF"/>
+        </svg>
+        <div class="market-name">Saudi Arabia</div>
+        <p class="market-desc">High-growth Vision 2030 real estate sector with significant emerging Yardi adoption. Particularly active in giga-project property management and large-scale residential portfolio operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        renderServicesStack();
-    </script>
-    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
-    <script src="assets/js/awesome-landing-page.js" type="text/javascript"></script>
+<!-- ═══════ TESTIMONIAL ═══════ -->
+<section id="testimonial">
+  <div class="testimonial-inner">
+    <div class="reveal">
+      <span class="t-quote-mark">"</span>
+      <p class="t-quote">What separates good support from great support is not the tools used. It is the depth of knowledge behind them. Artisan Solutions understands Yardi the way a surgeon understands anatomy. They resolved in two hours what our previous provider had been unable to fix in three weeks.</p>
+      <div class="t-rule"></div>
+      <span class="t-cite">Senior Director, Property Operations · Enterprise Real Estate Client · Dublin, Ireland</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-left reveal-left">
+        <span class="chip light">Get in Touch</span>
+        <h2 style="color:var(--white);">Let's talk about <em class="cu">your Yardi.</em></h2>
+        <div class="rule light"></div>
+        <p>We are selective about the partnerships we take on, because exceptional work requires genuine attention. If your organisation runs on Yardi and wants a support partner who feels like part of the team, we would welcome the conversation.</p>
+
+        <div class="contact-details">
+          <div class="cd">
+            <div class="cd-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="cd-content">
+              <span class="cd-label">Email</span>
+              <div class="cd-value"><a href="mailto:info@artisanitsolutions.com">info@artisanitsolutions.com</a></div>
+            </div>
+          </div>
+          <div class="cd">
+            <div class="cd-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="cd-content">
+              <span class="cd-label">Phone</span>
+              <div class="cd-value"><a href="tel:+97150000000">+971 50 000 0000</a></div>
+            </div>
+          </div>
+          <div class="cd">
+            <div class="cd-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <div class="cd-content">
+              <span class="cd-label">Website</span>
+              <div class="cd-value"><a href="https://www.artisanitsolutions.com">www.artisanitsolutions.com</a></div>
+            </div>
+          </div>
+          <div class="cd">
+            <div class="cd-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="cd-content">
+              <span class="cd-label">Headquarters</span>
+              <div class="cd-value">UAE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal-right">
+        <span class="chip light" style="margin-bottom:28px;">Request a Consultation</span>
+        <form id="contact-form">
+          <div class="form-2col">
+            <div class="form-row">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="James" required/>
+            </div>
+            <div class="form-row">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="O'Sullivan" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="james@company.com" required/>
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Greystone Property Group" required/>
+          </div>
+          <div class="form-row">
+            <label for="market">Your Market</label>
+            <select id="market" name="market">
+              <option value="">Select your location</option>
+              <option value="ie">Ireland</option>
+              <option value="us">United States</option>
+              <option value="sa">Saudi Arabia</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="service">I'm interested in</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option value="helpdesk">Yardi Helpdesk Support</option>
+              <option value="reports">Report Customisation</option>
+              <option value="migration">Data Migration</option>
+              <option value="all">All Three Services</option>
+              <option value="other">Not sure yet — let's talk</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Tell us about your Yardi environment</label>
+            <textarea id="message" name="message" placeholder="Which Yardi modules are you using? What are the main challenges you're facing?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-copper form-submit">
+            Send Request
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p id="form-success" style="display:none;margin-top:16px;font-size:.85rem;color:var(--copper-lt);font-family:var(--serif);font-style:italic;">Thank you. We'll be in touch within one business day.</p>
+          <p id="form-error" style="display:none;margin-top:12px;font-size:.82rem;color:#E07070;font-family:var(--sans);line-height:1.6;"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-top">ARTISAN</div>
+        <div class="footer-logo-bot">Solutions</div>
+        <p class="footer-tagline">"Crafted support. Measurable results."</p>
+        <p style="font-size:.78rem;color:rgba(255,255,255,.2);margin-top:20px;line-height:1.8;">Dedicated Yardi consulting for enterprise real estate and property management firms. Exclusively Yardi. Nothing else.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Yardi Helpdesk Support</a></li>
+          <li><a href="#services">Report Customisation</a></li>
+          <li><a href="#services">Data Migration</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#contact">Request a Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why Artisan</a></li>
+          <li><a href="#markets">Our Markets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="#markets">Ireland</a></li>
+          <li><a href="#markets">United States</a></li>
+          <li><a href="#markets">Saudi Arabia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Artisan Solutions. All rights reserved. Registered in Sharjah, UAE.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<div class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</div>
+
+<script>
+// ── Progress bar ─────────────────────────────────────
+const bar = document.getElementById('prog-bar');
+const navbar = document.getElementById('navbar');
+const backTop = document.getElementById('backTop');
+
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  bar.style.width = pct + '%';
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  backTop.classList.toggle('visible', window.scrollY > 500);
+}, { passive: true });
+
+// ── Reveal on scroll ─────────────────────────────────
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => io.observe(el));
+
+// ── Mobile menu ──────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+
+document.querySelectorAll('.mobile-link, .mobile-cta').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+// ── Smooth nav link active state ─────────────────────
+const sections = document.querySelectorAll('section[id], div[id="trust"]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.getAttribute('id');
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + id ? 'var(--copper)' : '';
+      });
+    }
+  });
+}, { threshold: 0.4 });
+
+sections.forEach(s => sectionObserver.observe(s));
+
+// ── Formspree contact form ───────────────────────────
+// SETUP: Replace YOUR_FORM_ID below with your Formspree form ID.
+// Steps:
+//   1. Go to https://formspree.io and sign up (free)
+//   2. Create a new form — enter info@artisanitsolutions.com
+//   3. Copy the form ID (e.g. "xyzabcde") from the endpoint URL
+//   4. Paste it below replacing YOUR_FORM_ID
+const FORMSPREE_ID = 'xeevaeda';
+
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const form    = e.target;
+  const btn     = form.querySelector('button[type="submit"]');
+  const success = document.getElementById('form-success');
+  const error   = document.getElementById('form-error');
+
+  // Formspree blocks file:// — must be served over http/https
+  if (window.location.protocol === 'file:') {
+    error.style.display = 'block';
+    error.textContent   = 'Form submissions require the site to be hosted online. Please upload the site to your web host or use a local server to test.';
+    return;
+  }
+
+  // Loading state
+  btn.disabled          = true;
+  btn.innerHTML         = 'Sending&hellip;';
+  error.style.display   = 'none';
+  success.style.display = 'none';
+
+  // Collect all form fields into a plain object for JSON submission
+  const fields = {};
+  new FormData(form).forEach((val, key) => { fields[key] = val; });
+
+  try {
+    const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method:  'POST',
+      body:    JSON.stringify(fields),
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept':       'application/json'
+      }
+    });
+
+    const json = await res.json();
+
+    if (res.ok) {
+      form.reset();
+      success.style.display = 'block';
+      btn.innerHTML         = 'Sent &#10003;';
+      btn.style.background  = 'var(--navy)';
+    } else {
+      // Surface the real Formspree error (e.g. "email not confirmed", "domain not allowed")
+      const msg = json.errors ? json.errors.map(e => e.message).join(', ') : (json.error || 'Submission failed');
+      throw new Error(msg);
+    }
+  } catch (err) {
+    error.style.display = 'block';
+    error.textContent   = err.message.includes('fetch')
+      ? 'Network error. Please check your connection and try again.'
+      : 'Error: ' + err.message + '. Please email info@artisanitsolutions.com directly.';
+    btn.disabled  = false;
+    btn.innerHTML = 'Try Again';
+  }
+});
+
+// ── Service card top-border hover (extra touch) ──────
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(-3px)';
+    this.style.transition = 'transform .3s ease, background .3s';
+    this.style.boxShadow = '0 12px 40px rgba(27,45,79,.08)';
+  });
+  card.addEventListener('mouseleave', function() {
+    this.style.transform = '';
+    this.style.boxShadow = '';
+  });
+});
+</script>
+</body>
 </html>
