@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block legal pages from search engines (optional — already noindex)
+Disallow: /privacy-policy.html
+Disallow: /terms-of-service.html
+
+# Sitemap location
+Sitemap: https://artisanitsolutions.com/sitemap.xml
