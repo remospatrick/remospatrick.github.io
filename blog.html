@@ -443,9 +443,11 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
     <h2>Yardi insights. <span style="font-style:italic;color:var(--copper-lt);">Direct.</span></h2>
     <p>New articles published monthly. No noise, no marketing. Just practical guidance from specialists who work exclusively in the Yardi ecosystem.</p>
     <div class="nl-form">
-      <input class="nl-input" type="email" placeholder="Your work email" aria-label="Email address"/>
-      <button class="nl-btn">Subscribe</button>
+      <input class="nl-input" id="nl-email" type="email" placeholder="Your work email" aria-label="Email address" required/>
+      <button class="nl-btn" id="nl-btn" onclick="handleSubscribe()">Subscribe</button>
     </div>
+    <p id="nl-success" style="display:none;margin-top:16px;font-size:.85rem;color:var(--copper-lt);font-family:var(--serif);font-style:italic;">You're subscribed. We'll be in touch when new articles are published.</p>
+    <p id="nl-error" style="display:none;margin-top:12px;font-size:.82rem;color:#E07070;line-height:1.6;"></p>
   </div>
 </section>
 
@@ -537,7 +539,56 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   });
 });
 
-// Filter buttons (UI only — extend with JS filtering when articles grow)
+// ── Newsletter subscribe ──────────────────────────────
+async function handleSubscribe() {
+  const emailInput = document.getElementById('nl-email');
+  const btn        = document.getElementById('nl-btn');
+  const success    = document.getElementById('nl-success');
+  const error      = document.getElementById('nl-error');
+
+  if (!emailInput.value || !emailInput.validity.valid) {
+    emailInput.focus();
+    return;
+  }
+
+  btn.disabled    = true;
+  btn.textContent = 'Subscribing...';
+  error.style.display   = 'none';
+  success.style.display = 'none';
+
+  try {
+    const res = await fetch('https://formspree.io/f/xeevaeda', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject:      'New Insights Subscription — Artisan Solutions',
+        type:          'Newsletter Subscription',
+        email:         emailInput.value,
+        message:       'This is an Insights newsletter subscription request submitted via artisanitsolutions.com/blog.html. Please add this email to your subscriber list.'
+      })
+    });
+
+    const json = await res.json();
+
+    if (res.ok) {
+      success.style.display = 'block';
+      btn.textContent       = 'Subscribed ✓';
+      btn.style.background  = 'var(--navy)';
+      emailInput.value      = '';
+      gtag('event', 'subscribe', { 'event_category': 'Newsletter', 'event_label': 'Blog page' });
+    } else {
+      const msg = json.errors ? json.errors.map(e => e.message).join(', ') : (json.error || 'Submission failed');
+      throw new Error(msg);
+    }
+  } catch (err) {
+    error.style.display = 'block';
+    error.textContent   = err.message.includes('fetch')
+      ? 'Network error. Please check your connection and try again.'
+      : 'Something went wrong. Please email info@artisanitsolutions.com directly.';
+    btn.disabled        = false;
+    btn.textContent     = 'Try Again';
+  }
+}
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
