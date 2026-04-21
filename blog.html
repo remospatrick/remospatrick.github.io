@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Insights | Artisan Solutions — Yardi Consulting</title>
+<meta name="description" content="Practical Yardi guidance for enterprise real estate and property management firms, written by specialists who work in the Yardi ecosystem every day."/>
+<meta name="keywords" content="Yardi consulting insights, Yardi support articles, Yardi tips, property management software blog, Yardi Voyager guides, enterprise real estate technology"/>
+<meta name="author" content="Artisan Solutions"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://artisanitsolutions.com/blog.html"/>
+
+<!-- ═══ OPEN GRAPH ═════════════════════════════════════════════════ -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://artisanitsolutions.com/blog.html"/>
+<meta property="og:site_name" content="Artisan Solutions"/>
+<meta property="og:title" content="Insights | Artisan Solutions — Yardi Consulting"/>
+<meta property="og:description" content="Practical Yardi guidance for enterprise real estate and property management firms, written by specialists who work in the Yardi ecosystem every day."/>
+<meta property="og:image" content="https://artisanitsolutions.com/og-preview-1200x630.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Artisan Solutions Insights — Yardi Consulting"/>
+<meta property="og:locale" content="en_US"/>
+
+<!-- ═══ TWITTER / X ════════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Insights | Artisan Solutions — Yardi Consulting"/>
+<meta name="twitter:description" content="Practical Yardi guidance for enterprise real estate firms, written by specialists who work in the ecosystem every day."/>
+<meta name="twitter:image" content="https://artisanitsolutions.com/og-preview-1200x630.png"/>
+
+<!-- ═══ STRUCTURED DATA — Blog ═════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Artisan Solutions Insights",
+  "description": "Practical Yardi guidance for enterprise real estate and property management firms.",
+  "url": "https://artisanitsolutions.com/blog.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Artisan Solutions",
+    "url": "https://artisanitsolutions.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://artisanitsolutions.com/icon-512.png"
+    }
+  },
+  "inLanguage": "en-US",
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Choose a Yardi Support Partner",
+      "url": "https://artisanitsolutions.com/artisan-article.html",
+      "description": "Not all Yardi partners are equal. Learn the five questions every enterprise real estate firm should ask before signing a Yardi support contract.",
+      "author": { "@type": "Organization", "name": "Artisan Solutions" },
+      "articleSection": "Yardi Consulting"
+    }
+  ]
+}
+</script>
+
+<!-- ═══ BREADCRUMB STRUCTURED DATA ═════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://artisanitsolutions.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://artisanitsolutions.com/blog.html" }
+  ]
+}
+</script>
+<!-- ═══ GOOGLE ANALYTICS ══════════════════════════════════════════ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L7KWB3EKTR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L7KWB3EKTR', {
+    'page_title': 'Insights',
+    'page_location': 'https://artisanitsolutions.com/blog.html',
+    'anonymize_ip': true,
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+
+  // Track article card clicks
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.article-card[href]').forEach(function(card) {
+      card.addEventListener('click', function() {
+        const title = card.querySelector('.ac-title');
+        if (title) {
+          gtag('event', 'select_content', {
+            'content_type': 'article',
+            'item_id': title.textContent.trim()
+          });
+        }
+      });
+    });
+
+    // Track CTA clicks
+    document.querySelectorAll('.nav-cta, .nl-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'CTA',
+          'event_label': btn.textContent.trim()
+        });
+      });
+    });
+  });
+</script>
+<!-- END ANALYTICS -->
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --navy:#1B2D4F;--navy-dk:#0F1B30;--navy-md:#243660;--navy-lt:#2E4275;
+  --copper:#B5652A;--copper-lt:#C97C42;--copper-pl:#F0DDD0;--copper-ms:#FAF0E8;
+  --sand:#F7F3EE;--linen:#EDE8E1;--pebble:#C8C0B4;--slate:#6B7280;
+  --ink:#1A1A1A;--white:#FFFFFF;
+  --serif:'Lora',Georgia,serif;--sans:'DM Sans',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--sand);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+
+/* PROGRESS */
+#prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:500;background:transparent;}
+#prog-bar{height:100%;width:0;background:var(--copper);transition:width .08s linear;}
+
+/* NAV */
+nav{
+  position:fixed;top:3px;left:0;right:0;z-index:400;
+  background:rgba(247,243,238,.95);backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--linen);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 52px;height:64px;transition:box-shadow .3s;
+}
+nav.scrolled{box-shadow:0 2px 24px rgba(27,45,79,.08);}
+.nav-logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.nav-logo-top{font-family:var(--serif);font-size:.92rem;font-weight:600;color:var(--navy);letter-spacing:.12em;text-transform:uppercase;}
+.nav-logo-bot{font-family:var(--serif);font-size:.62rem;font-style:italic;color:var(--copper);letter-spacing:.1em;}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center;}
+.nav-links a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);text-decoration:none;font-weight:400;transition:color .2s;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px;background:var(--copper);transform:scaleX(0);transition:transform .25s;}
+.nav-links a:hover,.nav-links a.active{color:var(--copper);}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1);}
+.nav-cta{padding:10px 24px;background:var(--navy);color:var(--white);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:400;text-decoration:none;border-radius:1px;transition:background .25s;white-space:nowrap;}
+.nav-cta:hover{background:var(--copper);}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--navy);transition:all .3s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.mobile-menu{position:fixed;top:67px;left:0;right:0;bottom:0;z-index:399;background:var(--sand);padding:48px 32px;display:flex;flex-direction:column;gap:28px;transform:translateX(100%);transition:transform .35s ease;overflow-y:auto;}
+.mobile-menu.open{transform:translateX(0);}
+.mobile-menu a{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--linen);padding-bottom:20px;}
+.mobile-menu a:hover{color:var(--copper);}
+.mobile-menu .m-cta{margin-top:8px;padding:14px 28px;background:var(--navy);color:var(--white);text-align:center;font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-radius:1px;border:none;}
+
+/* WRAP / HELPERS */
+.wrap{max-width:1080px;margin:0 auto;padding:0 52px;}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);font-weight:500;margin-bottom:16px;}
+.chip::before{content:'';width:20px;height:1.5px;background:var(--copper);}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;}
+h2{font-size:clamp(1.8rem,3.5vw,2.8rem);}
+h3{font-size:1.15rem;font-weight:500;}
+.rule{width:40px;height:2px;background:var(--copper);border-radius:1px;margin:22px 0 44px;}
+p.lead{font-size:1.05rem;color:var(--slate);line-height:1.9;max-width:520px;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:400;text-decoration:none;border-radius:1px;transition:background .25s,color .25s;cursor:pointer;border:none;font-family:var(--sans);}
+.btn-primary{background:var(--navy);color:var(--white);}
+.btn-primary:hover{background:var(--copper);}
+.btn svg{transition:transform .25s;}
+.btn:hover svg{transform:translateX(4px);}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* HERO */
+.page-hero{
+  background:var(--navy);
+  min-height:44vh;display:flex;align-items:flex-end;
+  padding:120px 0 0;position:relative;overflow:hidden;
+}
+.ph-cu{position:absolute;top:0;left:0;right:0;height:2.5px;background:linear-gradient(90deg,var(--copper),var(--copper-lt),transparent);}
+.ph-glow{position:absolute;left:-5%;top:50%;transform:translateY(-50%);width:50%;height:200%;border-radius:50%;background:radial-gradient(ellipse,rgba(181,101,42,.08) 0%,transparent 65%);pointer-events:none;}
+.ph-rings{position:absolute;right:-4%;top:50%;transform:translateY(-50%);opacity:.6;}
+.ph-ghost{position:absolute;right:2%;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-family:var(--serif);font-size:clamp(4rem,8vw,9rem);font-weight:600;color:rgba(255,255,255,.03);letter-spacing:.04em;text-transform:uppercase;pointer-events:none;user-select:none;white-space:nowrap;}
+.ph-inner{position:relative;z-index:1;padding:0 52px 56px;width:100%;max-width:1080px;margin:0 auto;}
+.ph-eyebrow{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--copper);margin-bottom:24px;font-weight:500;display:flex;align-items:center;gap:12px;opacity:0;animation:fadeUp .6s .1s forwards;}
+.ph-eyebrow::before{content:'';width:20px;height:1.5px;background:var(--copper);}
+.ph-title{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.4rem);font-weight:600;color:var(--white);line-height:1.1;margin-bottom:16px;opacity:0;animation:fadeUp .7s .25s forwards;}
+.ph-title em{font-style:italic;color:var(--copper-lt);}
+.ph-sub{font-family:var(--serif);font-style:italic;font-size:1rem;color:rgba(255,255,255,.4);max-width:520px;line-height:1.7;opacity:0;animation:fadeUp .7s .4s forwards;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+
+/* FILTER BAR */
+.filter-bar{
+  background:var(--white);border-bottom:1px solid var(--linen);
+  padding:0 52px;display:flex;align-items:center;gap:8px;
+  overflow-x:auto;
+}
+.filter-btn{
+  padding:18px 0;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--slate);background:none;border:none;cursor:pointer;
+  border-bottom:2px solid transparent;white-space:nowrap;
+  transition:color .2s,border-color .2s;font-family:var(--sans);font-weight:400;
+  margin-right:24px;
+}
+.filter-btn:hover,.filter-btn.active{color:var(--copper);border-bottom-color:var(--copper);}
+
+/* ARTICLES GRID */
+.articles-section{padding:72px 0 100px;}
+.articles-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:2px;background:var(--linen);
+  border:1px solid var(--linen);margin-top:52px;
+}
+.article-card{
+  background:var(--white);padding:48px 44px;
+  position:relative;overflow:hidden;
+  text-decoration:none;display:block;
+  transition:background .25s;
+}
+.article-card:hover{background:var(--copper-ms);}
+.article-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform .35s ease;}
+.article-card:hover::before{transform:scaleX(1);}
+.ac-tag{font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);font-weight:500;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.ac-tag::before{content:'';width:14px;height:1.5px;background:var(--copper);}
+.ac-title{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:var(--navy);line-height:1.35;margin-bottom:14px;}
+.ac-excerpt{font-size:.88rem;color:var(--slate);line-height:1.85;margin-bottom:28px;}
+.ac-foot{display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid var(--linen);}
+.ac-read{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:500;display:flex;align-items:center;gap:7px;}
+.ac-read svg{transition:transform .25s;}
+.article-card:hover .ac-read svg{transform:translateX(4px);}
+.ac-meta{font-size:.75rem;color:var(--pebble);}
+
+/* COMING SOON card */
+.article-card.soon{opacity:.5;cursor:default;pointer-events:none;}
+
+/* FEATURED (spans full width) */
+.article-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;}
+.article-card.featured .ac-img{background:var(--navy);display:flex;align-items:center;justify-content:center;padding:60px 48px;position:relative;overflow:hidden;}
+.ac-img-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(181,101,42,.1) 0%,transparent 65%);pointer-events:none;}
+.ac-img-wm{font-family:var(--serif);font-size:clamp(3rem,5vw,5.5rem);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.06);text-align:center;line-height:1;position:relative;z-index:1;}
+.ac-img-tag{position:absolute;top:28px;left:28px;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper-lt);font-weight:500;font-family:var(--sans);}
+.article-card.featured .ac-body{padding:56px 52px;display:flex;flex-direction:column;justify-content:center;}
+.article-card.featured .ac-title{font-size:clamp(1.4rem,2.5vw,1.85rem);margin-bottom:18px;}
+
+/* NEWSLETTER */
+.newsletter-section{background:var(--navy);padding:80px 0;}
+.nl-inner{max-width:600px;margin:0 auto;text-align:center;padding:0 52px;}
+.nl-inner .chip{color:rgba(181,101,42,.7);}
+.nl-inner .chip::before{background:rgba(181,101,42,.5);}
+.nl-inner h2{color:var(--white);font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:16px;}
+.nl-inner p{font-size:.9rem;color:rgba(255,255,255,.4);line-height:1.8;margin-bottom:32px;}
+.nl-form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;}
+.nl-input{
+  flex:1;min-width:220px;padding:14px 18px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+  color:rgba(255,255,255,.8);font-family:var(--sans);font-size:.9rem;font-weight:300;
+  outline:none;border-radius:1px;transition:border-color .25s;
+}
+.nl-input::placeholder{color:rgba(255,255,255,.25);}
+.nl-input:focus{border-color:rgba(181,101,42,.5);}
+.nl-btn{padding:14px 28px;background:var(--copper);color:var(--white);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:400;border:none;cursor:pointer;border-radius:1px;font-family:var(--sans);transition:background .25s;white-space:nowrap;}
+.nl-btn:hover{background:var(--copper-lt);}
+
+/* FOOTER */
+footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padding:56px 52px 36px;}
+.footer-inner{max-width:1080px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:40px;margin-bottom:56px;}
+.footer-brand{}
+.footer-logo-top{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);}
+.footer-logo-bot{font-family:var(--serif);font-size:.72rem;font-style:italic;color:rgba(181,101,42,.5);letter-spacing:.1em;}
+.footer-tagline{font-family:var(--serif);font-size:.82rem;font-style:italic;color:rgba(255,255,255,.18);margin-top:16px;line-height:1.6;}
+.footer-col h4{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(181,101,42,.6);font-weight:500;margin-bottom:20px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li a{font-size:.85rem;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s;}
+.footer-col ul li a:hover{color:var(--copper-lt);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-copy{font-size:.8rem;color:rgba(255,255,255,.18);}
+.footer-legal{display:flex;gap:20px;}
+.footer-legal a{font-size:.8rem;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s;}
+.footer-legal a:hover{color:var(--copper-lt);}
+
+/* BACK TO TOP */
+.back-top{position:fixed;bottom:32px;right:32px;z-index:300;width:44px;height:44px;background:var(--navy);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .3s,background .25s;pointer-events:none;}
+.back-top.visible{opacity:1;pointer-events:auto;}
+.back-top:hover{background:var(--copper);}
+.back-top svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:0 24px;height:60px;}
+  .nav-links,.nav-cta{display:none;}
+  .nav-hamburger{display:flex;}
+  .wrap,.ph-inner,.filter-bar,.nl-inner{padding-left:24px;padding-right:24px;}
+  .articles-grid{grid-template-columns:1fr;}
+  .article-card.featured{grid-template-columns:1fr;}
+  .article-card.featured .ac-img{display:none;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+  footer{padding:48px 24px 28px;}
+}
+</style>
+</head>
+<body>
+
+<div id="prog"><div id="prog-bar"></div></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <span class="nav-logo-top">ARTISAN</span>
+    <span class="nav-logo-bot">Solutions</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#why">Why Us</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#markets">Markets</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="blog.html" class="active">Insights</a></li>
+  </ul>
+  <a class="nav-cta" href="index.html#contact">Get in touch</a>
+  <div class="nav-hamburger" id="hamburger" role="button" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html#about">About</a>
+  <a href="index.html#services">Services</a>
+  <a href="index.html#why">Why Us</a>
+  <a href="index.html#process">Process</a>
+  <a href="index.html#markets">Markets</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="blog.html">Insights</a>
+  <a href="index.html#contact" class="m-cta">Get in touch</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-cu"></div>
+  <div class="ph-glow"></div>
+  <svg class="ph-rings" width="400" height="400" viewBox="0 0 400 400" fill="none">
+    <circle cx="200" cy="200" r="194" stroke="rgba(181,101,42,0.07)" stroke-width="1"/>
+    <circle cx="200" cy="200" r="146" stroke="rgba(181,101,42,0.05)" stroke-width="1" stroke-dasharray="3 6"/>
+    <circle cx="200" cy="200" r="98" stroke="rgba(181,101,42,0.04)" stroke-width="1"/>
+  </svg>
+  <div class="ph-ghost">INSIGHTS</div>
+  <div class="ph-inner">
+    <div class="ph-eyebrow">Artisan Solutions · Expert Perspective</div>
+    <h1 class="ph-title">Yardi expertise. <em>Shared.</em></h1>
+    <p class="ph-sub">Practical guidance for enterprise real estate and property management firms who rely on Yardi, written by specialists who work in it every day.</p>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active">All</button>
+  <button class="filter-btn">Yardi Consulting</button>
+  <button class="filter-btn">Data Migration</button>
+  <button class="filter-btn">Report Customization</button>
+  <button class="filter-btn">Market Insights</button>
+</div>
+
+<!-- ARTICLES -->
+<section class="articles-section">
+  <div class="wrap">
+
+    <div class="reveal">
+      <span class="chip">Latest Articles</span>
+      <h2>What we <em style="font-style:italic;color:var(--copper);">know.</em></h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="articles-grid">
+
+      <!-- FEATURED — Article 1 -->
+      <a class="article-card featured reveal" href="artisan-article.html">
+        <div class="ac-img">
+          <div class="ac-img-glow"></div>
+          <span class="ac-img-tag">Featured Article</span>
+          <div class="ac-img-wm">ARTISAN</div>
+        </div>
+        <div class="ac-body">
+          <div class="ac-tag">Yardi Consulting</div>
+          <h3 class="ac-title">How to Choose a Yardi Support Partner</h3>
+          <p class="ac-excerpt">Not all Yardi partners are equal. Here is what separates a trusted specialist from a generalist who happens to know the product, and the questions to ask before you sign a contract. A practical framework for enterprise real estate and property management firms.</p>
+          <div class="ac-foot">
+            <span class="ac-read">
+              Read article
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="ac-meta">6 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Article 2 — coming soon -->
+      <div class="article-card soon reveal">
+        <div class="ac-tag">Data Migration</div>
+        <h3 class="ac-title">Five Signs Your Yardi Data Migration Is at Risk</h3>
+        <p class="ac-excerpt">Data migration is where Yardi projects most often go wrong. We break down the early warning signs, and what to do before it is too late to course-correct.</p>
+        <div class="ac-foot">
+          <span class="ac-read" style="color:var(--pebble);">Publishing soon</span>
+          <span class="ac-meta">Est. 5 min read</span>
+        </div>
+      </div>
+
+      <!-- Article 3 — coming soon -->
+      <div class="article-card soon reveal">
+        <div class="ac-tag">Report Customization</div>
+        <h3 class="ac-title">Why Standard Yardi Reports Are Failing Your Leadership Team</h3>
+        <p class="ac-excerpt">Out-of-the-box reports answer standard questions. We explain why custom Yardi reporting is not a luxury, and what your leadership team is missing without it.</p>
+        <div class="ac-foot">
+          <span class="ac-read" style="color:var(--pebble);">Publishing soon</span>
+          <span class="ac-meta">Est. 4 min read</span>
+        </div>
+      </div>
+
+      <!-- Article 4 — coming soon -->
+      <div class="article-card soon reveal">
+        <div class="ac-tag">Market Insights</div>
+        <h3 class="ac-title">Yardi Adoption in Saudi Arabia: What Vision 2030 Means for Real Estate Technology</h3>
+        <p class="ac-excerpt">The Kingdom's giga-project pipeline is driving rapid adoption of enterprise property management platforms. Here is what that means for firms already running on Yardi.</p>
+        <div class="ac-foot">
+          <span class="ac-read" style="color:var(--pebble);">Publishing soon</span>
+          <span class="ac-meta">Est. 6 min read</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="nl-inner reveal">
+    <span class="chip">Stay Informed</span>
+    <h2>Yardi insights. <span style="font-style:italic;color:var(--copper-lt);">Direct.</span></h2>
+    <p>New articles published monthly. No noise, no marketing. Just practical guidance from specialists who work exclusively in the Yardi ecosystem.</p>
+    <div class="nl-form">
+      <input class="nl-input" type="email" placeholder="Your work email" aria-label="Email address"/>
+      <button class="nl-btn">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-top">ARTISAN</div>
+        <div class="footer-logo-bot">Solutions</div>
+        <p class="footer-tagline">"Crafted support. Measurable results."</p>
+        <p style="font-size:.78rem;color:rgba(255,255,255,.2);margin-top:20px;line-height:1.8;">Dedicated Yardi consulting for enterprise real estate and property management firms. Exclusively Yardi. Nothing else.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Yardi Helpdesk Support</a></li>
+          <li><a href="index.html#services">Report Customization</a></li>
+          <li><a href="index.html#services">Data Migration</a></li>
+          <li><a href="index.html#contact">Request a Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#why">Why Artisan</a></li>
+          <li><a href="index.html#markets">Our Markets</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="index.html#markets">Ireland</a></li>
+          <li><a href="index.html#markets">United States</a></li>
+          <li><a href="index.html#markets">Saudi Arabia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Insights</h4>
+        <ul>
+          <li><a href="artisan-article.html">How to Choose a Yardi Partner</a></li>
+          <li><a href="blog.html">All Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Artisan Solutions. All rights reserved. Registered in Sharjah, UAE.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</div>
+
+<script>
+const bar = document.getElementById('prog-bar');
+const navbar = document.getElementById('navbar');
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  bar.style.width = (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + '%';
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  backTop.classList.toggle('visible', window.scrollY > 500);
+}, { passive: true });
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+// Filter buttons (UI only — extend with JS filtering when articles grow)
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

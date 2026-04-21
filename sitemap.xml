@@ -4,9 +4,25 @@
   <!-- Homepage -->
   <url>
     <loc>https://artisanitsolutions.com/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Insights Hub -->
+  <url>
+    <loc>https://artisanitsolutions.com/blog.html</loc>
+    <lastmod>2025-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article: How to Choose a Yardi Support Partner -->
+  <url>
+    <loc>https://artisanitsolutions.com/artisan-article.html</loc>
+    <lastmod>2025-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Privacy Policy -->

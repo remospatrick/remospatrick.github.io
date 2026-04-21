@@ -495,6 +495,49 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
 .footer-legal a{font-size:.8rem;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s;}
 .footer-legal a:hover{color:var(--copper-lt);}
 
+/* ─── INSIGHTS SECTION ──────────────────────────────────── */
+#insights{background:var(--linen);}
+.insights-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--linen);margin-top:52px;border:1px solid var(--linen);}
+.insight-card{
+  background:var(--white);padding:44px 40px;
+  position:relative;overflow:hidden;
+  text-decoration:none;display:block;
+  transition:background .25s;
+}
+.insight-card:hover{background:var(--copper-ms);}
+.insight-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--copper);transform:scaleX(0);transform-origin:left;
+  transition:transform .35s ease;
+}
+.insight-card:hover::before{transform:scaleX(1);}
+.insight-tag{
+  font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--copper);font-weight:500;margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.insight-tag::before{content:'';width:14px;height:1.5px;background:var(--copper);}
+.insight-title{
+  font-family:var(--serif);font-size:1.25rem;font-weight:500;
+  color:var(--navy);line-height:1.35;margin-bottom:14px;
+}
+.insight-excerpt{font-size:.875rem;color:var(--slate);line-height:1.8;margin-bottom:24px;}
+.insight-meta{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:20px;border-top:1px solid var(--linen);
+}
+.insight-read{
+  font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--copper);font-weight:500;display:flex;align-items:center;gap:7px;
+}
+.insight-read svg{transition:transform .25s;}
+.insight-card:hover .insight-read svg{transform:translateX(4px);}
+.insight-date{font-size:.75rem;color:var(--pebble);}
+.insights-cta-row{
+  margin-top:32px;text-align:center;
+}
+@media(max-width:768px){.insights-grid{grid-template-columns:1fr;}}
+
 /* ─── BACK TO TOP ───────────────────────────────────────── */
 .back-top{
   position:fixed;bottom:32px;right:32px;z-index:300;
@@ -561,6 +604,7 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
     <li><a href="#process">Process</a></li>
     <li><a href="#markets">Markets</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#insights">Insights</a></li>
   </ul>
   <a class="nav-cta btn" href="#contact">Get in touch</a>
   <div class="nav-hamburger" id="hamburger" role="button" aria-label="Toggle menu">
@@ -575,6 +619,8 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
   <a href="#why" class="mobile-link">Why Us</a>
   <a href="#process" class="mobile-link">Process</a>
   <a href="#markets" class="mobile-link">Markets</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#insights" class="mobile-link">Insights</a>
   <a href="#contact" class="mobile-cta btn btn-primary m-cta">Get in touch</a>
 </div>
 
@@ -968,7 +1014,6 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
               <div class="cd-value"><a href="mailto:info@artisanitsolutions.com">info@artisanitsolutions.com</a></div>
             </div>
           </div>
-
           <div class="cd">
             <div class="cd-icon">
               <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
@@ -1049,6 +1094,52 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
   </div>
 </section>
 
+<!-- ═══════ INSIGHTS ═══════ -->
+<section id="insights" class="section linen">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="chip">Insights</span>
+      <h2>Yardi expertise. <em class="cu">Shared.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">Practical guidance for enterprise real estate and property management firms who rely on Yardi, written by specialists who work in it every day.</p>
+    </div>
+    <div class="insights-grid reveal">
+
+      <!-- Article 1 -->
+      <a class="insight-card" href="artisan-article.html">
+        <div class="insight-tag">Yardi Consulting</div>
+        <h3 class="insight-title">How to Choose a Yardi Support Partner</h3>
+        <p class="insight-excerpt">Not all Yardi partners are equal. Here is what separates a trusted specialist from a generalist who happens to know the product, and the questions to ask before you sign.</p>
+        <div class="insight-meta">
+          <span class="insight-read">
+            Read article
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="insight-date">6 min read</span>
+        </div>
+      </a>
+
+      <!-- Coming soon card -->
+      <div class="insight-card" style="opacity:.55;cursor:default;">
+        <div class="insight-tag">Coming Soon</div>
+        <h3 class="insight-title">Five Signs Your Yardi Data Migration Is at Risk</h3>
+        <p class="insight-excerpt">Data migration is where Yardi projects most often go wrong. We break down the early warning signs, and what to do before it's too late.</p>
+        <div class="insight-meta">
+          <span class="insight-read" style="color:var(--pebble);">Publishing soon</span>
+          <span class="insight-date">Est. 5 min read</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="insights-cta-row reveal">
+      <a class="btn btn-ghost" href="blog.html">
+        View all insights
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════ FOOTER ═══════ -->
 <footer>
   <div class="footer-inner">
@@ -1086,6 +1177,13 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
           <li><a href="#markets">Saudi Arabia</a></li>
         </ul>
       </div>
+      <div class="footer-col">
+        <h4>Insights</h4>
+        <ul>
+          <li><a href="artisan-article.html">How to Choose a Yardi Partner</a></li>
+          <li><a href="blog.html">All Articles</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 Artisan Solutions. All rights reserved. Registered in Sharjah, UAE.</p>
@@ -1116,6 +1214,17 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // ── Reveal on scroll ─────────────────────────────────
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+function revealIfVisible(el) {
+  const rect = el.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 40) {
+    el.classList.add('visible');
+    return true;
+  }
+  return false;
+}
+
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1125,7 +1234,14 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => io.observe(el));
+revealEls.forEach(el => {
+  if (!revealIfVisible(el)) io.observe(el);
+});
+
+// Re-run on back/forward navigation (bfcache restore)
+window.addEventListener('pageshow', () => {
+  revealEls.forEach(el => revealIfVisible(el));
+});
 
 // ── Mobile menu ──────────────────────────────────────
 const hamburger = document.getElementById('hamburger');
@@ -1146,7 +1262,7 @@ document.querySelectorAll('.mobile-link, .mobile-cta').forEach(link => {
 });
 
 // ── Smooth nav link active state ─────────────────────
-const sections = document.querySelectorAll('section[id], div[id="trust"]');
+const sections = document.querySelectorAll('section[id], div[id="trust"], section[id="insights"]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
 const sectionObserver = new IntersectionObserver((entries) => {
