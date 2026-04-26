@@ -25,6 +25,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Article: Five Signs Your Yardi Data Migration Is at Risk -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-data-migration-risks.html</loc>
+    <lastmod>2025-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://artisanitsolutions.com/privacy-policy.html</loc>
