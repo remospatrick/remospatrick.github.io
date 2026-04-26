@@ -367,11 +367,11 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
 
 <!-- FILTER BAR -->
 <div class="filter-bar">
-  <button class="filter-btn active">All</button>
-  <button class="filter-btn">Yardi Consulting</button>
-  <button class="filter-btn">Data Migration</button>
-  <button class="filter-btn">Report Customization</button>
-  <button class="filter-btn">Market Insights</button>
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="yardi-consulting">Yardi Consulting</button>
+  <button class="filter-btn" data-filter="data-migration">Data Migration</button>
+  <button class="filter-btn" data-filter="report-customization">Report Customization</button>
+  <button class="filter-btn" data-filter="market-insights">Market Insights</button>
 </div>
 
 <!-- ARTICLES -->
@@ -387,7 +387,7 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
     <div class="articles-grid">
 
       <!-- FEATURED — Article 1 -->
-      <a class="article-card featured reveal" href="artisan-article.html">
+      <a class="article-card featured reveal" href="artisan-article.html" data-category="yardi-consulting">
         <div class="ac-img">
           <div class="ac-img-glow"></div>
           <span class="ac-img-tag">Featured Article</span>
@@ -408,7 +408,7 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
       </a>
 
       <!-- Article 2 — Data Migration -->
-      <a class="article-card reveal" href="yardi-data-migration-risks.html">
+      <a class="article-card reveal" href="yardi-data-migration-risks.html" data-category="data-migration">
         <div class="ac-tag">Data Migration</div>
         <h3 class="ac-title">Five Signs Your Yardi Data Migration Is at Risk</h3>
         <p class="ac-excerpt">Data migration is where most Yardi projects go wrong. We break down the five early warning signs and what to do before it is too late to course-correct.</p>
@@ -422,7 +422,7 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
       </a>
 
       <!-- Article 3 — coming soon -->
-      <div class="article-card soon reveal">
+      <div class="article-card soon reveal" data-category="report-customization">
         <div class="ac-tag">Report Customization</div>
         <h3 class="ac-title">Why Standard Yardi Reports Are Failing Your Leadership Team</h3>
         <p class="ac-excerpt">Out-of-the-box reports answer standard questions. We explain why custom Yardi reporting is not a luxury, and what your leadership team is missing without it.</p>
@@ -433,7 +433,7 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
       </div>
 
       <!-- Article 4 — coming soon -->
-      <div class="article-card soon reveal">
+      <div class="article-card soon reveal" data-category="market-insights">
         <div class="ac-tag">Market Insights</div>
         <h3 class="ac-title">Yardi Adoption in Saudi Arabia: What Vision 2030 Means for Real Estate Technology</h3>
         <p class="ac-excerpt">The Kingdom's giga-project pipeline is driving rapid adoption of enterprise property management platforms. Here is what that means for firms already running on Yardi.</p>
@@ -601,10 +601,42 @@ async function handleSubscribe() {
     btn.textContent     = 'Try Again';
   }
 }
-document.querySelectorAll('.filter-btn').forEach(btn => {
+
+// ── Filter ───────────────────────────────────────────
+const filterBtns = document.querySelectorAll('.filter-btn');
+const cards      = document.querySelectorAll('.article-card[data-category]');
+const grid       = document.querySelector('.articles-grid');
+
+// Inject empty state element
+const emptyState = document.createElement('p');
+emptyState.textContent = 'No articles in this category yet. Check back soon.';
+emptyState.style.cssText = 'display:none;grid-column:1/-1;text-align:center;padding:60px 20px;font-size:.9rem;color:var(--pebble);font-family:var(--serif);font-style:italic;';
+grid.appendChild(emptyState);
+
+filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    const filter = btn.dataset.filter;
+
+    // Update active button
+    filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+
+    // Show/hide cards
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const match = filter === 'all' || card.dataset.category === filter;
+      card.style.display = match ? '' : 'none';
+      if (match) visibleCount++;
+    });
+
+    // Featured card: full width only on All view
+    const featured = document.querySelector('.article-card.featured');
+    if (featured) {
+      featured.style.gridColumn = filter === 'all' ? '1 / -1' : '';
+    }
+
+    // Empty state
+    emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
   });
 });
 </script>
