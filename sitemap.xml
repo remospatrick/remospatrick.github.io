@@ -33,6 +33,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Article: Why Standard Yardi Reports Are Failing Your Leadership Team -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-reporting.html</loc>
+    <lastmod>2025-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://artisanitsolutions.com/privacy-policy.html</loc>
