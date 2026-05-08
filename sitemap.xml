@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -37,6 +37,14 @@
   <url>
     <loc>https://artisanitsolutions.com/yardi-reporting.html</loc>
     <lastmod>2025-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article: Yardi Adoption in Saudi Arabia: What Vision 2030 Means for Real Estate Technology -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-saudi-arabia-vision-2030.html</loc>
+    <lastmod>2025-05-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
