@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2025-05-08</lastmod>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -45,6 +45,14 @@
   <url>
     <loc>https://artisanitsolutions.com/yardi-saudi-arabia-vision-2030.html</loc>
     <lastmod>2025-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article: How to Get More From Your Yardi Helpdesk Support -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-helpdesk-support.html</loc>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
