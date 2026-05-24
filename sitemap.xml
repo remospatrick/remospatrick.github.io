@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2025-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -53,6 +53,14 @@
   <url>
     <loc>https://artisanitsolutions.com/yardi-helpdesk-support.html</loc>
     <lastmod>2025-05-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article: The Hidden Costs of a Poor Yardi Implementation -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-implementation-costs.html</loc>
+    <lastmod>2025-05-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
