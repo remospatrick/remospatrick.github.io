@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2025-05-22</lastmod>
+    <lastmod>2025-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -61,6 +61,14 @@
   <url>
     <loc>https://artisanitsolutions.com/yardi-implementation-costs.html</loc>
     <lastmod>2025-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article: Yardi for Build-to-Rent: What Irish Property Firms Need to Know -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-build-to-rent-ireland.html</loc>
+    <lastmod>2025-05-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
