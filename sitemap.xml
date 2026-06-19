@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -69,6 +69,14 @@
   <url>
     <loc>https://artisanitsolutions.com/yardi-build-to-rent-ireland.html</loc>
     <lastmod>2025-05-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article: Yardi and the Future of AI in Property Management -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-ai-property-management.html</loc>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
