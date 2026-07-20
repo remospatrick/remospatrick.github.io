@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -95,6 +95,14 @@
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Article: UAE E-Invoicing Mandate: How Yardi Helps Real Estate Firms Stay Ahead -->
+  <url>
+    <loc>https://artisanitsolutions.com/uae-e-invoicing-yardi.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Privacy Policy -->
