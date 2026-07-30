@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -103,6 +103,14 @@
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Article: How Yardi Supports Mixed-Use Portfolios -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-mixed-use-portfolios.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Privacy Policy -->
