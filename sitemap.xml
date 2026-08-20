@@ -12,7 +12,7 @@
   <!-- Insights Hub -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -117,6 +117,14 @@
   <url>
     <loc>https://artisanitsolutions.com/yardi-rentcafe-resident-experience.html</loc>
     <lastmod>2026-08-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article: How Yardi Bank Book Transforms Property Finance Reconciliation -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-bank-book-reconciliation.html</loc>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
