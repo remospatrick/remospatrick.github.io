@@ -1106,10 +1106,10 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
     <div class="insights-grid reveal">
 
       <!-- Article 1 -->
-      <a class="insight-card" href="artisan-article.html">
+      <a class="insight-card" href="yardi-bank-book-reconciliation.html">
         <div class="insight-tag">Yardi Consulting</div>
-        <h3 class="insight-title">How to Choose a Yardi Support Partner</h3>
-        <p class="insight-excerpt">Not all Yardi partners are equal. Here is what separates a trusted specialist from a generalist who happens to know the product, and the questions to ask before you sign.</p>
+        <h3 class="insight-title">How Yardi Bank Book Transforms Property Finance Reconciliation</h3>
+        <p class="insight-excerpt">Bank reconciliation is one of the biggest bottlenecks in property management month-end close. Yardi's Bank Book and Automatic Bank Reconciliation are built to change that fundamentally.</p>
         <div class="insight-meta">
           <span class="insight-read">
             Read article
@@ -1120,16 +1120,16 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
       </a>
 
       <!-- Article 2 -->
-      <a class="insight-card" href="yardi-data-migration-risks.html">
-        <div class="insight-tag">Data Migration</div>
-        <h3 class="insight-title">Five Signs Your Yardi Data Migration Is at Risk</h3>
-        <p class="insight-excerpt">Data migration is where most Yardi projects go wrong. We break down the five early warning signs and what to do before it is too late to course-correct.</p>
+      <a class="insight-card" href="yardi-rentcafe-resident-experience.html">
+        <div class="insight-tag">Yardi Consulting</div>
+        <h3 class="insight-title">Yardi RentCafe: Transforming the Resident Experience</h3>
+        <p class="insight-excerpt">RentCafe gives residents one connected place to manage their entire rental journey, from application to renewal. Here is what it does, how it connects to Voyager, and why it matters for operators who want to retain great tenants.</p>
         <div class="insight-meta">
           <span class="insight-read">
             Read article
             <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
-          <span class="insight-date">7 min read</span>
+          <span class="insight-date">6 min read</span>
         </div>
       </a>
 
@@ -1183,14 +1183,14 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
       <div class="footer-col">
         <h4>Insights</h4>
         <ul>
-          <li><a href="artisan-article.html">How to Choose a Yardi Partner</a></li>
-          <li><a href="yardi-data-migration-risks.html">Five Signs Your Migration Is at Risk</a></li>
+          <li><a href="yardi-bank-book-reconciliation.html">Yardi Bank Book and Reconciliation</a></li>
+          <li><a href="yardi-rentcafe-resident-experience.html">Yardi RentCafe and the Resident Experience</a></li>
           <li><a href="blog.html">All Articles</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 Artisan Solutions. All rights reserved. Registered in Sharjah, UAE.</p>
+      <p class="footer-copy">© <span id="copyright-year">2026</span> Artisan Solutions. All rights reserved. Registered in Sharjah, UAE.</p>
       <div class="footer-legal">
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
@@ -1205,6 +1205,9 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
 </div>
 
 <script>
+// ── Copyright year ────────────────────────────────────
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
 // ── Progress bar ─────────────────────────────────────
 const bar = document.getElementById('prog-bar');
 const navbar = document.getElementById('navbar');
