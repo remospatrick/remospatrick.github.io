@@ -268,11 +268,13 @@ footer{background:var(--navy-dk);border-top:2px solid var(--copper);padding:44px
       </div>
     </div>
     <div class="fi-bottom">
-      <p class="fi-copy">© 2025 Artisan Solutions. All rights reserved. Registered in Sharjah, UAE.</p>
+      <p class="fi-copy">© <span id="copyright-year">2026</span> Artisan Solutions. All rights reserved. Registered in Sharjah, UAE.</p>
     </div>
   </div>
 </footer>
 <script>
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
 const bar = document.getElementById('prog-bar');
 window.addEventListener('scroll', () => {
   bar.style.width = (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + '%';
