@@ -1,0 +1,32 @@
+/* Site-wide layer: design-system tokens, reset, keyboard focus ring.
+   Shared by every page that links it — edit here, not in a page's <style>.
+   Colours follow the Artisan Solutions Design System (https://claude.ai/design/p/01d13dfc-6e66-40a8-9edd-e5ff28a39060). */
+:root{
+  /* Brand palette */
+  --navy:#1B2D4F;
+  --navy-dk:#0F1B30;
+  --navy-md:#243660;
+  --navy-lt:#2E4275;
+  --copper:#B5652A;
+  --copper-lt:#C97C42;
+  --copper-pl:#F0DDD0;
+  --copper-ms:#FAF0E8;
+  --sand:#F7F3EE;
+  --linen:#EDE8E1;
+  --pebble:#C8C0B4;
+  --slate:#6B7280;
+  --ink:#1A1A1A;
+  --white:#FFFFFF;
+  /* Text coppers: copper text under 24px uses these (design system rule 6) */
+  --copper-ink:#9E5520;
+  --copper-on-dark:#E3A06D;
+  /* Type */
+  --serif:'Lora', Georgia, serif;
+  --sans:'DM Sans', sans-serif;
+  /* Keyboard focus */
+  --focus-ring:2px solid var(--copper);
+  --focus-ring-offset:2px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:var(--focus-ring);outline-offset:var(--focus-ring-offset)}
+.form-row input:focus-visible,.form-row select:focus-visible,.form-row textarea:focus-visible,.nl-input:focus-visible{outline:2px solid var(--copper-lt);outline-offset:2px}
