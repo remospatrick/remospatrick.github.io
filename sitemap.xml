@@ -4,23 +4,23 @@
   <!-- Homepage -->
   <url>
     <loc>https://artisanitsolutions.com/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Insights Hub -->
+  <!-- Blog listing -->
   <url>
     <loc>https://artisanitsolutions.com/blog.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <!-- Article: How to Choose a Yardi Support Partner -->
   <url>
     <loc>https://artisanitsolutions.com/artisan-article.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Article: Five Signs Your Yardi Data Migration Is at Risk -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-data-migration-risks.html</loc>
-    <lastmod>2025-04-26</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -36,15 +36,15 @@
   <!-- Article: Why Standard Yardi Reports Are Failing Your Leadership Team -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-reporting.html</loc>
-    <lastmod>2025-05-01</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Article: Yardi Adoption in Saudi Arabia: What Vision 2030 Means for Real Estate Technology -->
+  <!-- Article: Yardi Adoption in Saudi Arabia -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-saudi-arabia-vision-2030.html</loc>
-    <lastmod>2025-05-08</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -52,7 +52,7 @@
   <!-- Article: How to Get More From Your Yardi Helpdesk Support -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-helpdesk-support.html</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -60,15 +60,15 @@
   <!-- Article: The Hidden Costs of a Poor Yardi Implementation -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-implementation-costs.html</loc>
-    <lastmod>2025-05-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Article: Yardi for Build-to-Rent: What Irish Property Firms Need to Know -->
+  <!-- Article: Yardi for Build-to-Rent in Ireland -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-build-to-rent-ireland.html</loc>
-    <lastmod>2025-05-30</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -76,15 +76,15 @@
   <!-- Article: Yardi and the Future of AI in Property Management -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-ai-property-management.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Article: How to Onboard a New Property into Yardi Without Disrupting Operations -->
+  <!-- Article: How to Onboard a New Property into Yardi -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-property-onboarding.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -92,15 +92,15 @@
   <!-- Article: How Yardi Supports Commercial Real Estate Portfolios -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-commercial-real-estate.html</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Article: UAE E-Invoicing Mandate: How Yardi Helps Real Estate Firms Stay Ahead -->
+  <!-- Article: UAE E-Invoicing Mandate: How Yardi Helps -->
   <url>
     <loc>https://artisanitsolutions.com/uae-e-invoicing-yardi.html</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -108,7 +108,7 @@
   <!-- Article: How Yardi Supports Mixed-Use Portfolios -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-mixed-use-portfolios.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -116,7 +116,7 @@
   <!-- Article: Yardi RentCafe: Transforming the Resident Experience -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-rentcafe-resident-experience.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -124,7 +124,7 @@
   <!-- Article: How Yardi Bank Book Transforms Property Finance Reconciliation -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-bank-book-reconciliation.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -132,7 +132,7 @@
   <!-- Article: Yardi for Multifamily: What US Property Managers Should Expect -->
   <url>
     <loc>https://artisanitsolutions.com/yardi-multifamily-us.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -145,10 +145,18 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Article: How to Use Yardi Analytics to Make Better Portfolio Decisions -->
+  <url>
+    <loc>https://artisanitsolutions.com/yardi-analytics-portfolio-decisions.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://artisanitsolutions.com/privacy-policy.html</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -156,7 +164,7 @@
   <!-- Terms of Service -->
   <url>
     <loc>https://artisanitsolutions.com/terms-of-service.html</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
