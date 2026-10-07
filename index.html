@@ -317,6 +317,8 @@ p.body{font-size:.9rem;color:var(--slate);line-height:1.9;}
 .hero-ey{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--copper-ink);margin-bottom:28px;font-weight:500;opacity:0;animation:fadeUp .6s .1s forwards;}
 .hero-h1{font-family:var(--serif);font-size:clamp(3rem,7vw,5.6rem);font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);line-height:.95;margin-bottom:8px;opacity:0;animation:fadeUp .75s .25s forwards;}
 .hero-h1-sub{font-family:var(--serif);font-size:clamp(1.1rem,2.5vw,1.9rem);font-style:italic;color:var(--copper);letter-spacing:.06em;margin-bottom:28px;opacity:0;animation:fadeUp .7s .4s forwards;}
+/* Below 960px the clamp drops under 24px, where brand copper (3.9:1 on sand) is too faint — use the AA text copper. */
+@media (max-width:959px){.hero-h1-sub{color:var(--copper-ink);}}
 .hero-tagline{font-family:var(--serif);font-size:clamp(.95rem,1.8vw,1.2rem);font-style:italic;color:var(--slate);margin-bottom:48px;max-width:400px;opacity:0;animation:fadeUp .7s .54s forwards;}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp .7s .68s forwards;}
 .hero-markets{
