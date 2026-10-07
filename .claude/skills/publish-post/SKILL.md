@@ -17,7 +17,12 @@ echo '{"tool_input":{"file_path":"<slug>.html"}}' | python .claude/hooks/check-s
 echo '{"tool_input":{"file_path":"<slug>.html"}}' | python .claude/hooks/check-design-system.py
 ```
 
-Both must exit 0 (exit 2 prints what's wrong). For a design-system failure about missing tokens or focus ring, copy the `:root` block and the `:focus-visible` rules from a recent article; for small copper text, use `var(--copper-ink)` on light backgrounds or `var(--copper-on-dark)` on navy. Re-run until both pass.
+Both must exit 0 (exit 2 prints what's wrong). Then make the post use the shared stylesheets:
+- Its `<head>` must link `assets/css/site.css` then `assets/css/article.css`, before its inline `<style>`. Copy them from a recent article.
+- Delete from its inline `<style>` the `:root` token block and any rule that already exists verbatim in `site.css` or `article.css`. A post written elsewhere (e.g. claude.ai) often carries a full copy. Keep only what's unique to the post.
+- Small copper text: `var(--copper-ink)` on light backgrounds, `var(--copper-on-dark)` on navy.
+
+Re-run both checks until they pass.
 
 ## 2. blog.html
 - JSON-LD: append a `BlogPosting` object to the `"blogPost": [...]` array (headline, url, description, author, articleSection).
