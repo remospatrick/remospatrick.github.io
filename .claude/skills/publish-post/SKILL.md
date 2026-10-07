@@ -10,6 +10,15 @@ Read the post first to get its headline, description, category (`articleSection`
 ## 1. The post itself
 Check that each of these equals the page URL exactly: `<link rel="canonical">`, `og:url`, the Article JSON-LD `url` and `mainEntityOfPage`, and the last BreadcrumbList `item`. Fix any that don't match.
 
+The post is often written outside this repo (e.g. in claude.ai), so the edit hooks never saw it. Run both on it now:
+
+```bash
+echo '{"tool_input":{"file_path":"<slug>.html"}}' | python .claude/hooks/check-structured-data.py
+echo '{"tool_input":{"file_path":"<slug>.html"}}' | python .claude/hooks/check-design-system.py
+```
+
+Both must exit 0 (exit 2 prints what's wrong). For a design-system failure about missing tokens or focus ring, copy the `:root` block and the `:focus-visible` rules from a recent article; for small copper text, use `var(--copper-ink)` on light backgrounds or `var(--copper-on-dark)` on navy. Re-run until both pass.
+
 ## 2. blog.html
 - JSON-LD: append a `BlogPosting` object to the `"blogPost": [...]` array (headline, url, description, author, articleSection).
 - Grid: append an `<a class="article-card reveal">` after the last card, with comment `<!-- Article N — Category -->` (N = previous + 1). Set `data-category` to one of `yardi-consulting`, `market-insights`, `data-migration`, `report-customization`, and add `ac-tag`, `ac-title`, `ac-excerpt` and `ac-meta` ("N min read").
