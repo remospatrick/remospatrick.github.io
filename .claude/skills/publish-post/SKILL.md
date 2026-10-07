@@ -23,5 +23,8 @@ Check that each of these equals the page URL exactly: `<link rel="canonical">`, 
 - The `insights-grid` has 2 `insight-card`s. Put the new post in Article 1, move the old Article 1 to Article 2, and drop the old Article 2.
 - Footer "Insights" list: put the new post first, keep the one after it, remove the rest, and keep "All Articles" last.
 
-## 5. Commit
+## 5. Design check
+Run `node .claude/tools/contrast-audit.cjs <slug>.html index.html blog.html` (first time: `npm --prefix .claude/tools install`). It must end with "All copper text checks pass". If it fails, switch the reported copper text to `var(--copper-ink)` (light background) or `var(--copper-on-dark)` (navy) and run it again. The `check-design-system.py` hook already blocks the obvious cases on every edit; this catches the rest in a real browser at desktop and phone widths.
+
+## 6. Commit
 Show `git diff --stat` and confirm that exactly these files changed: the post, blog.html, sitemap.xml and index.html. Then make one commit: `Publish <headline>`. Do not push unless asked.

@@ -1,0 +1,11 @@
+{
+  "name": "artisan-site-tools",
+  "private": true,
+  "description": "Local checks for artisanitsolutions.com. Not published: GitHub Pages skips dot-folders.",
+  "scripts": {
+    "audit": "node contrast-audit.cjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}
