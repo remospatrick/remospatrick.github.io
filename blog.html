@@ -408,6 +408,11 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
 .footer-legal{display:flex;gap:20px;}
 .footer-legal a{font-size:.8rem;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s;}
 .footer-legal a:hover{color:var(--copper-lt);}
+.footer-tm{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:16px;line-height:1.7;}
+/* ICN membership band: Yardi requires the blue logo, at the bottom, apart from our wordmark */
+#icn{background:var(--white);border-top:1px solid var(--linen);padding:56px 24px;text-align:center;}
+#icn img{display:block;width:160px;height:auto;margin:0 auto 22px;}
+#icn p{font-size:.88rem;color:var(--slate);max-width:640px;margin:0 auto;line-height:1.8;}
 /* BACK TO TOP */
 .back-top{position:fixed;bottom:32px;right:32px;z-index:300;width:44px;height:44px;background:var(--navy);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .3s,background .25s;pointer-events:none;}
 .back-top.visible{opacity:1;pointer-events:auto;}
@@ -793,6 +798,12 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
   </div>
 </section>
 
+<!-- YARDI ICN -->
+<section id="icn" aria-label="Yardi Independent Consultant Network membership">
+  <img src="assets/img/yardi-icn.png" width="841" height="269" alt="Yardi Independent Consultant" loading="lazy"/>
+  <p>Artisan Solutions is a member of the Yardi Independent Consultant Network.</p>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
@@ -862,6 +873,7 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
         <a href="terms-of-service.html">Terms of Service</a>
       </div>
     </div>
+    <p class="footer-tm">Yardi® and Yardi product names are trademarks of Yardi Systems. Artisan Solutions is an independent consultant and is not owned or operated by Yardi.</p>
   </div>
 </footer>
 
