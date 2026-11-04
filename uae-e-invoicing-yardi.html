@@ -137,6 +137,7 @@
 .tl-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;font-family:var(--sans);}
 .tl-badge.live{background:var(--copper-ms);color:var(--copper-ink);}
 .tl-badge.soon{background:rgba(27,45,79,.08);color:var(--navy);}
+@media(max-width:600px){.timeline th,.timeline td{padding:12px 8px;} .tl-date{white-space:normal;}}
 .sign-card{background:var(--white);border:1px solid var(--linen);padding:32px 36px;margin:2.5rem 0;position:relative;overflow:hidden;border-radius:1px;transition:border-color .25s;}
 .sign-card:hover{border-color:var(--copper-pl);}
 .sign-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--copper);}
@@ -220,6 +221,14 @@
       <span class="hm-item">7 min read</span>
       <span class="hm-item">UAE · Market Insights</span>
     </div>
+  </div>
+</section>
+
+<section class="yicn-strip" aria-label="Yardi Independent Consultant Network membership">
+  <div class="yicn-strip__inner">
+    <img src="assets/yicn-logo-blue.png" alt="Yardi Independent Consultant" width="120" height="37">
+    <span class="yicn-strip__bar" aria-hidden="true"></span>
+    <p class="yicn-strip__text">Artisan Solutions is a member of the Yardi Independent Consultant Network.</p>
   </div>
 </section>
 
@@ -385,11 +394,6 @@
 
 </article>
 
-<section class="icn-band" aria-label="Yardi Independent Consultant Network membership">
-  <img src="assets/img/yardi-icn.png" width="841" height="269" alt="Yardi Independent Consultant" loading="lazy"/>
-  <p>Artisan Solutions is a member of the Yardi Independent Consultant Network.</p>
-</section>
-
 <footer class="article-footer">
   <div class="af-inner">
     <div>
@@ -399,7 +403,6 @@
     </div>
     <a class="af-cta" href="index.html#contact">Begin the conversation</a>
   </div>
-  <p class="af-tm">Yardi® and Yardi product names are trademarks of Yardi Systems. Artisan Solutions is an independent consultant and is not owned or operated by Yardi.</p>
 </footer>
 
 <script>
