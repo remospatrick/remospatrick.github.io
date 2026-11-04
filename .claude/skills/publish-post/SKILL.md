@@ -21,13 +21,14 @@ Both must exit 0 (exit 2 prints what's wrong). Then make the post use the shared
 - Its `<head>` must link `assets/css/site.css` then `assets/css/article.css`, before its inline `<style>`. Copy them from a recent article.
 - Delete from its inline `<style>` the `:root` token block and any rule that already exists verbatim in `site.css` or `article.css`. A post written elsewhere (e.g. claude.ai) often carries a full copy. Keep only what's unique to the post.
 - Small copper text: `var(--copper-ink)` on light backgrounds, `var(--copper-on-dark)` on navy.
+- YICN strip: the `<section class="yicn-strip">` block must sit right after `</section>` of `.article-hero` and before `<article class="article-wrap">`. Copy it verbatim from a recent article; don't edit the logo or wording (Yardi-approved).
 
 Re-run both checks until they pass.
 
 ## 2. blog.html
 - JSON-LD: append a `BlogPosting` object to the `"blogPost": [...]` array (headline, url, description, author, articleSection).
 - Grid: append an `<a class="article-card reveal">` after the last card, with comment `<!-- Article N — Category -->` (N = previous + 1). Set `data-category` to one of `yardi-consulting`, `market-insights`, `data-migration`, `report-customization`, and add `ac-tag`, `ac-title`, `ac-excerpt` and `ac-meta` ("N min read").
-- Footer "Insights" list: add a `<li>` just before "All Articles".
+- Footer "Insights" list (the 3 newest posts, newest first): put the new post first, keep the next two, remove the rest, and keep "All Articles" last.
 
 ## 3. sitemap.xml
 - Add an `<!-- Article: <headline> -->` `<url>` block after the last article entry, with lastmod = today (YYYY-MM-DD), changefreq `monthly` and priority `0.8`.
