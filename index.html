@@ -47,6 +47,10 @@
   "logo": "https://artisanitsolutions.com/icon-512.png",
   "image": "https://artisanitsolutions.com/og-preview-1200x630.png",
   "email": "info@artisanitsolutions.com",
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Yardi Independent Consultant Network"
+  },
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Sharjah",
@@ -316,20 +320,16 @@ p.body{font-size:.9rem;color:var(--slate);line-height:1.9;}
 .trust-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);font-weight:400;}
 /* ─── ABOUT ─────────────────────────────────────────────── */
 #about{background:var(--white);}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:64px;}
+.about-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:80px;align-items:stretch;margin-top:64px;}
+.about-grid .reveal-right{display:flex;flex-direction:column;}
+/* YICN credential panel: Yardi's white logo with only its transparent margin trimmed; never recolour or crop the mark */
+.icn-panel{flex:1;display:flex;flex-direction:column;justify-content:flex-start;background:var(--navy);padding:36px 44px 48px;}/* 36px top: logo lines up with the 2nd line of the About text */
+.icn-panel img{display:block;width:260px;max-width:100%;height:auto;}
+.icn-rule{width:40px;height:2px;background:var(--copper);margin:24px 0;}
+.icn-panel h3{font-family:var(--serif);font-size:1.625rem;font-weight:400;color:var(--white);line-height:1.35;}
+.icn-panel p{font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.8;margin-top:14px;}
 .about-text p{font-size:.95rem;color:var(--slate);line-height:1.9;margin-bottom:16px;}
 .about-text p strong{color:var(--navy);font-weight:500;}
-.about-callout{
-  background:var(--sand);padding:48px 40px;
-  border-left:3px solid var(--copper);
-  position:relative;
-}
-.about-callout::before{
-  content:'"'  ;font-family:var(--serif);font-size:6rem;
-  color:var(--copper-pl);line-height:1;position:absolute;top:12px;left:28px;
-}
-.about-callout p{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--navy);line-height:1.6;padding-top:28px;position:relative;z-index:1;}
-.about-callout cite{display:block;margin-top:20px;font-family:var(--sans);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--copper-ink);font-style:normal;}
 /* ─── SERVICES ──────────────────────────────────────────── */
 #services{background:var(--sand);}
 .services-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;background:var(--linen);margin-top:56px;border:1px solid var(--linen);}
@@ -595,7 +595,7 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
   <div class="hero-ghost">ARTISAN</div>
 
   <div class="hero-inner">
-    <p class="hero-ey">Yardi Consulting · Based in the UAE · artisanitsolutions.com</p>
+    <p class="hero-ey">Yardi Consulting · Based in the UAE · Yardi ICN member</p>
     <h1 class="hero-h1">ARTISAN</h1>
     <div class="hero-h1-sub">Solutions</div>
     <p class="hero-tagline">"Crafted support. Measurable results."</p>
@@ -653,21 +653,19 @@ footer{background:var(--navy-dk);border-top:1px solid rgba(255,255,255,.06);padd
         <p>Our clients are enterprise real estate and property management firms across <strong>the UAE, Ireland, USA, and Saudi Arabia</strong>, where a Yardi failure at month-end is not a technical problem. It is a business crisis.</p>
         <p>We are selective about the engagements we take on. Because doing exceptional work requires genuine attention, and we give it every time.</p>
         <div style="margin-top:32px;">
-          <a class="btn btn-primary" href="#contact">
+          <a class="btn btn-copper" href="#contact">
             Work with us
             <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
       <div class="reveal-right">
-        <div class="about-callout">
-          <p>"What separates good support from great support is not the tools used. It is the depth of knowledge behind them. Artisan Solutions understands Yardi the way a surgeon understands anatomy."</p>
-          <cite>Senior Director, Property Operations · Enterprise client, Dublin</cite>
-        </div>
-        <div style="margin-top:20px;padding:28px 32px;background:var(--copper-pl);border-left:2px solid var(--copper);">
-          <p style="font-size:.88rem;color:var(--navy);line-height:1.75;font-family:var(--serif);font-style:italic;">"The Yardi partner who stays."</p>
-          <p style="font-size:.8rem;color:var(--slate);margin-top:8px;line-height:1.7;">We are not a one-off engagement. We are the firm you call the first time, and keep calling, because we already know your system, your team, and what you need before you ask.</p>
-        </div>
+        <aside class="icn-panel" aria-label="Yardi Independent Consultant Network membership">
+          <img src="assets/yicn-logo-white.png" alt="Yardi Independent Consultant" width="260" height="80"/>
+          <div class="icn-rule"></div>
+          <h3>A member of the Yardi Independent Consultant Network.</h3>
+          <p>Our consultants have spent their careers inside Yardi Voyager, including years at Yardi itself. Network membership is the formal recognition of that depth.</p>
+        </aside>
       </div>
     </div>
   </div>
