@@ -6,6 +6,7 @@ article.css (Insights articles) and legal.css (privacy/terms). Pages keep only p
 
 Blocking (exit 2, stderr goes back to Claude):
   - a page doesn't link assets/css/site.css
+  - a page loads Google Analytics without assets/js/consent.js before it (EU cookie consent)
   - a page redefines design-system tokens inline (tokens live only in site.css, so pages can't drift)
   - site.css loses --copper-ink / --copper-on-dark or the :focus-visible ring
   - small copper text: a rule sets text colour to brand copper / a copper tint AND a font-size under 24px
@@ -51,6 +52,11 @@ if is_html:
     if "site.css" not in linked:
         errors.append('page must link the shared stylesheet: <link rel="stylesheet" href="assets/css/site.css"/> '
                       "(articles also assets/css/article.css), placed before any inline <style>")
+    ga = text.find("googletagmanager.com/gtag/js")
+    consent = text.find('<script src="assets/js/consent.js"></script>')
+    if ga != -1 and not (0 <= consent < ga):
+        errors.append('page loads Google Analytics without the cookie consent script: put '
+                      '<script src="assets/js/consent.js"></script> on the line before the googletagmanager tag')
     if DS_TOKENS.search(inline):
         errors.append("inline <style> redefines design-system tokens; they live only in assets/css/site.css")
     sheets = [strip(read(os.path.join(root_dir, "assets", "css", f))) for f in linked

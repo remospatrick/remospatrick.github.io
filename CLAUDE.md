@@ -34,5 +34,5 @@ Pages follow the **Artisan Solutions Design System** (https://claude.ai/design/p
 
 ## Checks
 
-- `.claude/hooks/check-structured-data.py` (SEO) and `.claude/hooks/check-design-system.py` run automatically after every page or `assets/css` edit and block on failures. The design check covers: the `site.css` link, no inline token redefinitions, the tokens and focus ring in `site.css`, and small copper text in the page's inline CSS plus the stylesheets it links.
+- `.claude/hooks/check-structured-data.py` (SEO) and `.claude/hooks/check-design-system.py` run automatically after every page or `assets/css` edit and block on failures. The design check covers: the `site.css` link, `assets/js/consent.js` loaded before the Google Analytics tag (EU cookie consent), no inline token redefinitions, the tokens and focus ring in `site.css`, and small copper text in the page's inline CSS plus the stylesheets it links.
 - `node .claude/tools/contrast-audit.cjs [page.html …]` measures copper text contrast in Chrome at 1280px and 375px. Run `npm --prefix .claude/tools install` once first. The `publish-post` skill runs it before committing a new post.
