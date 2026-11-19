@@ -29,4 +29,11 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:var(--focus-ring);outline-offset:var(--focus-ring-offset)}
+/* Cookie consent bar, built by assets/js/consent.js */
+.cc-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:1000;max-width:720px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:16px 20px;background:var(--navy);border-top:2px solid var(--copper);color:var(--white);font:14px/1.5 var(--sans);}
+.cc-bar p{flex:1 1 280px;}
+.cc-bar a{color:var(--copper-on-dark);}
+.cc-btns{display:flex;gap:10px;}
+.cc-bar button{padding:9px 20px;font:inherit;font-size:13px;cursor:pointer;border:1px solid var(--white);border-radius:1px;background:transparent;color:var(--white);}
+.cc-bar button[data-cc="granted"]{background:var(--white);color:var(--navy);}
 .form-row input:focus-visible,.form-row select:focus-visible,.form-row textarea:focus-visible,.nl-input:focus-visible{outline:2px solid var(--copper-lt);outline-offset:2px}
